@@ -15,4 +15,4 @@
     -  661.43– 663.77 s (2.3 s): Q2 corte a negro
     -  672.67– 686.97 s (14.3 s): PCb negro + créditos (texto sobre negro)
     -  703.27– 704.50 s (1.2 s): PCb negro + créditos (texto sobre negro)
-- Loudness integrado -15.0 LUFS (objetivo −16 a −14); true peak -2.4 dBTP (≤ −1)
+- Loudness integrado -15.0 LUFS (objetivo −16 a −14); true peak -2.2 dBTP (≤ −1)

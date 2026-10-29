@@ -77,6 +77,18 @@ def heartbeat():
     return norm(x, 0.95)
 
 
+def heartbeat_loud():
+    """Mismo lub-dub, con armónicos y golpe seco (150-900 Hz) para que se oiga en parlantes chicos."""
+    x = heartbeat()
+    knock = np.zeros_like(x)
+    for o, a in [(0, 1.0), (int(0.24 * SR), 0.75)]:
+        t = t_(0.09)
+        k = bp(rng.standard_normal(len(t)), 180, 900) * np.exp(-t * 55) + 0.6 * np.sin(2 * np.pi * 160 * t) * np.exp(-t * 35)
+        knock[o:o + len(t)] += a * k
+    body = np.tanh(2.2 * x) / np.tanh(2.2)
+    return norm(body + 0.55 * norm(knock, 1.0), 0.95)
+
+
 def impact():
     t = t_(4.0)
     f = 30 + 70 * np.exp(-t * 3.5)
@@ -274,6 +286,7 @@ def voices_track(dur=18.5):
 
 def main():
     save("sfx_latido.wav", heartbeat())
+    save("sfx_latido_fuerte.wav", heartbeat_loud())
     save("sfx_impacto.wav", impact())
     save("sfx_whoosh.wav", whoosh(0.8, True))
     save("sfx_whoosh_down.wav", whoosh(1.0, False))

@@ -96,17 +96,26 @@ def main():
         place(fx, load("sfx_reloj.wav"), SH[sid]["start"], -14, 0.2, 0.4, dur=SH[sid]["end"] - SH[sid]["start"])
     # escena 6: fuga
     f0 = SH["S6f"]["start"]
-    beats(SH["S6e"]["start"] + 2.0, SH["S6f"]["end"], 95, 150, -6)
+    hbf = load("sfx_latido_fuerte.wav")
+    s6f = SH["S6f"]
+    k0 = f0 + (10.65 - s6f["tin"]) / s6f["rate"]   # "Fermatevi!" (IMG_1320, 10.75-11.6 s de fuente)
+    k1 = f0 + (11.7 - s6f["tin"]) / s6f["rate"]
+    t = SH["S6e"]["start"] + 2.0
+    while t < k0 - 0.3:
+        f = (t - SH["S6e"]["start"] - 2.0) / max(0.01, k0 - SH["S6e"]["start"] - 2.0)
+        place(fx, hbf if t >= f0 else hb, t, -6 + 4 * f)
+        t += 60 / (95 + 30 * f)
     place(fx, load("sfx_respiro.wav"), f0, -8)
     place(fx, load("sfx_pasos.wav"), f0 + 1.2, -11)
     place(fx, load("sfx_pasos.wav"), f0 + 6.0, -7)
     place(fx, load("sfx_riser.wav")[-int(4 * SR):], SH["S6f"]["end"] - 4.0, -14)
-    # negro: el latido sigue, se acelera y se detiene de golpe (alguien muere); después, silencio
+    # después de "Fermatevi!" el latido sigue solo, en primer plano, y pasa al negro sin cortarse:
+    # cada golpe separado (lub-dub), se acelera un poco y se detiene de golpe (alguien muere); después, silencio
     g0 = SH["S6g"]["start"]
-    t, k = g0 + 0.05, 0
+    t, k = k1 + 0.25, 0
     while t < g0 + 2.75:
-        place(fx, hb, t, -5 + 0.4 * k)
-        t += 60 / (150 + 9 * k)
+        place(fx, hbf, t, 0.0)
+        t += max(0.44, 0.56 - 0.012 * k)
         k += 1
 
     # ---- canal: cama sutil y "glitches"
@@ -161,9 +170,6 @@ def main():
     music[:] = music * duck[:, None]
 
     # "Fermatevi!" (IMG_1320, 10.75-11.6 s de fuente) tiene que oírse por encima del latido y el riser
-    s6f = next(s for s in TL["shots"] if s["id"] == "S6f")
-    k0 = s6f["start"] + (10.65 - s6f["tin"]) / s6f["rate"]
-    k1 = s6f["start"] + (11.7 - s6f["tin"]) / s6f["rate"]
     a, b, r = int(k0 * SR), int(k1 * SR), int(0.12 * SR)
     g = np.ones(N, np.float32)
     g[a:b] = db(-13)
