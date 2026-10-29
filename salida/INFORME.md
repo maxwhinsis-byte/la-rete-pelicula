@@ -11,7 +11,7 @@
 
 ## Qué hice
 1. **Inventario:**
-   - Bajé de Drive los 45 videos, 3 fotos y 3 audios sin recodificar, y verifiqué el tamaño de cada uno. Las copias duplicadas en Drive (mismo nombre y tamaño) se bajaron una sola vez.
+   - Bajé de Drive los 45 videos, 3 fotos y 3 audios sin recodificar, y verifiqué el tamaño de cada uno. El 29/10 se sumó IMG_1320 (la huida). Las copias duplicadas en Drive (mismo nombre y tamaño) se bajaron una sola vez.
    - Pasé las tomas HDR (HLG) del iPhone a SDR y armé proxies 1080p30.
    - Transcribí todo con Whisper large-v3 en italiano, palabra por palabra, y extraje fotogramas.
    - Identifiqué cada clip cruzando audio, imagen y guion (`analisis/mapa_clips.csv`).
@@ -35,7 +35,7 @@
 6. **Gráficos** (HyperFrames + GSAP):
    - Apertura: 151 palabras sincronizadas con los golpes, retroceso, título "LA RETE" con barrido de luz.
    - Interfaz DOSSIER: logo, IN DIRETTA, reloj, ticker por bloque y lower thirds. Etiquetas de fuente **[n]**.
-   - Infografías: red Mesopotamia–India–Cina, 61 %/60 % de la ONU, Parioli, respuesta rápida, eje ipotalamo–ipofisi–surrene con feedback, dopamina/ossitocina, "Ipotesi ≠ dimostrazione", consenso, salud, mito/realidad, las tres frases del texto, ES/IO/SUPER-IO, razionalizzazione, la scala libertà → violenza y stereotipi.
+   - Infografías: red Mesopotamia–India–Cina, 61 %/60 % de la ONU, Parioli, respuesta rápida, eje ipotalamo–ipofisi–surrene con feedback, dopamina/ossitocina, "Ipotesi ≠ dimostrazione", consenso, salud, mito/realidad, las tres frases del texto, ES/IO/SUPER-IO, razionalizzazione y la scala libertà → violenza.
    - Historia: carteles "Ricostruzione", Mese 4/6/11 (las fotos reales de la hoja) y Mese 12.
    - Transiciones canal ↔ historia: estática de señal.
    - Presentación de los 6 personajes: 1 s congelado en blanco y negro, flecha y tarjeta. En la historia, oscura (Cormorant / ámbar); en el canal, estilo TV.
