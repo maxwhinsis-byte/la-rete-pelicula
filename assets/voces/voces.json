@@ -1,0 +1,482 @@
+[
+ {
+  "file": "00_it_00.mp3",
+  "lang": "it",
+  "word": "prostituzione",
+  "voice": "it-IT-ElsaNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "00_it_01.mp3",
+  "lang": "it",
+  "word": "prostituzione",
+  "voice": "it-IT-ElsaNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "00_it_02.mp3",
+  "lang": "it",
+  "word": "prostituzione",
+  "voice": "it-IT-ElsaNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "00_it_10.mp3",
+  "lang": "it",
+  "word": "prostituzione",
+  "voice": "it-IT-DiegoNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "00_it_11.mp3",
+  "lang": "it",
+  "word": "prostituzione",
+  "voice": "it-IT-DiegoNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "01_es_00.mp3",
+  "lang": "es",
+  "word": "prostitución",
+  "voice": "es-UY-ValentinaNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "01_es_01.mp3",
+  "lang": "es",
+  "word": "prostitución",
+  "voice": "es-UY-ValentinaNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "01_es_02.mp3",
+  "lang": "es",
+  "word": "prostitución",
+  "voice": "es-UY-ValentinaNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "01_es_10.mp3",
+  "lang": "es",
+  "word": "prostitución",
+  "voice": "es-ES-AlvaroNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "01_es_11.mp3",
+  "lang": "es",
+  "word": "prostitución",
+  "voice": "es-ES-AlvaroNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "02_fr_00.mp3",
+  "lang": "fr",
+  "word": "prostitution",
+  "voice": "fr-FR-DeniseNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "02_fr_01.mp3",
+  "lang": "fr",
+  "word": "prostitution",
+  "voice": "fr-FR-DeniseNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "02_fr_02.mp3",
+  "lang": "fr",
+  "word": "prostitution",
+  "voice": "fr-FR-DeniseNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "02_fr_10.mp3",
+  "lang": "fr",
+  "word": "prostitution",
+  "voice": "fr-FR-HenriNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "02_fr_11.mp3",
+  "lang": "fr",
+  "word": "prostitution",
+  "voice": "fr-FR-HenriNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "03_en_00.mp3",
+  "lang": "en",
+  "word": "prostitution",
+  "voice": "en-US-GuyNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "03_en_01.mp3",
+  "lang": "en",
+  "word": "prostitution",
+  "voice": "en-US-GuyNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "03_en_02.mp3",
+  "lang": "en",
+  "word": "prostitution",
+  "voice": "en-US-GuyNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "03_en_10.mp3",
+  "lang": "en",
+  "word": "prostitution",
+  "voice": "en-GB-SoniaNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "03_en_11.mp3",
+  "lang": "en",
+  "word": "prostitution",
+  "voice": "en-GB-SoniaNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "04_de_00.mp3",
+  "lang": "de",
+  "word": "Prostitution",
+  "voice": "de-DE-KatjaNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "04_de_01.mp3",
+  "lang": "de",
+  "word": "Prostitution",
+  "voice": "de-DE-KatjaNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "04_de_02.mp3",
+  "lang": "de",
+  "word": "Prostitution",
+  "voice": "de-DE-KatjaNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "04_de_10.mp3",
+  "lang": "de",
+  "word": "Prostitution",
+  "voice": "de-DE-ConradNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "04_de_11.mp3",
+  "lang": "de",
+  "word": "Prostitution",
+  "voice": "de-DE-ConradNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "05_pt_00.mp3",
+  "lang": "pt",
+  "word": "prostituição",
+  "voice": "pt-BR-FranciscaNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "05_pt_01.mp3",
+  "lang": "pt",
+  "word": "prostituição",
+  "voice": "pt-BR-FranciscaNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "05_pt_02.mp3",
+  "lang": "pt",
+  "word": "prostituição",
+  "voice": "pt-BR-FranciscaNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "05_pt_10.mp3",
+  "lang": "pt",
+  "word": "prostituição",
+  "voice": "pt-PT-DuarteNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "05_pt_11.mp3",
+  "lang": "pt",
+  "word": "prostituição",
+  "voice": "pt-PT-DuarteNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "06_ru_00.mp3",
+  "lang": "ru",
+  "word": "проституция",
+  "voice": "ru-RU-SvetlanaNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "06_ru_01.mp3",
+  "lang": "ru",
+  "word": "проституция",
+  "voice": "ru-RU-SvetlanaNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "06_ru_02.mp3",
+  "lang": "ru",
+  "word": "проституция",
+  "voice": "ru-RU-SvetlanaNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "06_ru_10.mp3",
+  "lang": "ru",
+  "word": "проституция",
+  "voice": "ru-RU-DmitryNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "06_ru_11.mp3",
+  "lang": "ru",
+  "word": "проституция",
+  "voice": "ru-RU-DmitryNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "07_ar_00.mp3",
+  "lang": "ar",
+  "word": "دعارة",
+  "voice": "ar-EG-SalmaNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "07_ar_01.mp3",
+  "lang": "ar",
+  "word": "دعارة",
+  "voice": "ar-EG-SalmaNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "07_ar_02.mp3",
+  "lang": "ar",
+  "word": "دعارة",
+  "voice": "ar-EG-SalmaNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "07_ar_10.mp3",
+  "lang": "ar",
+  "word": "دعارة",
+  "voice": "ar-SA-HamedNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "07_ar_11.mp3",
+  "lang": "ar",
+  "word": "دعارة",
+  "voice": "ar-SA-HamedNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "08_zh_00.mp3",
+  "lang": "zh",
+  "word": "卖淫",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "08_zh_01.mp3",
+  "lang": "zh",
+  "word": "卖淫",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "08_zh_02.mp3",
+  "lang": "zh",
+  "word": "卖淫",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "08_zh_10.mp3",
+  "lang": "zh",
+  "word": "卖淫",
+  "voice": "zh-CN-YunxiNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "08_zh_11.mp3",
+  "lang": "zh",
+  "word": "卖淫",
+  "voice": "zh-CN-YunxiNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "09_ja_00.mp3",
+  "lang": "ja",
+  "word": "売春",
+  "voice": "ja-JP-NanamiNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "09_ja_01.mp3",
+  "lang": "ja",
+  "word": "売春",
+  "voice": "ja-JP-NanamiNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "09_ja_02.mp3",
+  "lang": "ja",
+  "word": "売春",
+  "voice": "ja-JP-NanamiNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "09_ja_10.mp3",
+  "lang": "ja",
+  "word": "売春",
+  "voice": "ja-JP-KeitaNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "09_ja_11.mp3",
+  "lang": "ja",
+  "word": "売春",
+  "voice": "ja-JP-KeitaNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "10_tl_00.mp3",
+  "lang": "tl",
+  "word": "prostitusyon",
+  "voice": "fil-PH-BlessicaNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "10_tl_01.mp3",
+  "lang": "tl",
+  "word": "prostitusyon",
+  "voice": "fil-PH-BlessicaNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "10_tl_02.mp3",
+  "lang": "tl",
+  "word": "prostitusyon",
+  "voice": "fil-PH-BlessicaNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "10_tl_10.mp3",
+  "lang": "tl",
+  "word": "prostitusyon",
+  "voice": "fil-PH-AngeloNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "10_tl_11.mp3",
+  "lang": "tl",
+  "word": "prostitusyon",
+  "voice": "fil-PH-AngeloNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "11_hi_00.mp3",
+  "lang": "hi",
+  "word": "वेश्यावृत्ति",
+  "voice": "hi-IN-SwaraNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "11_hi_01.mp3",
+  "lang": "hi",
+  "word": "वेश्यावृत्ति",
+  "voice": "hi-IN-SwaraNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ },
+ {
+  "file": "11_hi_02.mp3",
+  "lang": "hi",
+  "word": "वेश्यावृत्ति",
+  "voice": "hi-IN-SwaraNeural",
+  "pitch": "+10Hz",
+  "rate": "+6%"
+ },
+ {
+  "file": "11_hi_10.mp3",
+  "lang": "hi",
+  "word": "वेश्यावृत्ति",
+  "voice": "hi-IN-MadhurNeural",
+  "pitch": "+0Hz",
+  "rate": "+0%"
+ },
+ {
+  "file": "11_hi_11.mp3",
+  "lang": "hi",
+  "word": "वेश्यावृत्ति",
+  "voice": "hi-IN-MadhurNeural",
+  "pitch": "-12Hz",
+  "rate": "-8%"
+ }
+]
