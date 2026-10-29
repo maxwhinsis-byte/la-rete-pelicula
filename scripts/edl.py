@@ -142,7 +142,7 @@ SHOTS: list[Shot] = [
     Shot("P2b", "IMG_1359", 76.15, 81.45, "canal", "psiche", rate=TALK),
     Shot("P3", "IMG_1359", 81.4, 88.45, "canal", "psiche", rate=TALK),
     Shot("P4", "IMG_1359", 93.25, 110.6, "canal", "psiche", rate=TALK, punch=1.07, fx=["gfx:civilta", "gfx:freud"]),
-    Shot("P7", "IMG_1359", 130.9, 133.7, "canal", "psiche", rate=TALK),
+    Shot("P7", "IMG_1359", 133.6, 136.4, "canal", "psiche", rate=TALK),
     # Scena 6 — La fuga
     Shot("S6a", None, look="black", section="s6", dur=2.4, fx=["card:Mese 12"]),
     Shot("S6b", "IMG_1307", 0.5, 11.7, "s6", "s6", push=0.04),
@@ -290,7 +290,7 @@ CUES: list[Cue] = [
     Cue("IMG_1359", 104.82, 110.52, "P", "E lo stigma verso chi è sfruttato può rendere più difficile chiedere aiuto."),
     Cue("IMG_1359", 118.04, 121.3, "B", "Un'ultima domanda: quali sono i limiti di Freud?"),
     Cue("IMG_1359", 122.22, 128.76, "P", "È una teoria interpretativa, discussa e criticata: non va usata come spiegazione biologica, né per giudicare le persone."),
-    Cue("IMG_1359", 130.98, 133.58, "B", "Abbiamo l'ultima ricostruzione, relativa all'ultimo mese."),
+    Cue("IMG_1359", 133.68, 136.3, "B", "Abbiamo l'ultima ricostruzione, relativa all'ultimo mese."),
     # Scena 6
     Cue("IMG_1307", 0.72, 3.2, "D", "Un anno. Non può essere per sempre."),
     Cue("IMG_1307", 4.04, 7.9, "E", "Beh, gli chiediamo i passaporti. E se dice di no…"),

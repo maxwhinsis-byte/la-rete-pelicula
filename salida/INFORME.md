@@ -7,7 +7,7 @@
 | Borrador liviano | `La_rete_borrador_720p.mp4` (65 MB) |
 | Subtítulos | `La_rete.srt` (italiano; también grabados en la imagen) |
 | Dónde | GitHub `maxwhinsis-byte/la-rete-pelicula` → Release `v1.0`, y Drive "la rete videos/salida" |
-| Loudness | −15.0 LUFS integrado · true peak −2.2 dBTP |
+| Loudness | −15.0 LUFS integrado · true peak −2.1 dBTP |
 
 ## Qué hice
 1. **Inventario:**
@@ -22,7 +22,7 @@
 3. **Montaje** (`scripts/edl.py`, `analisis/EDL.md`):
    - Respeta la estructura del guion: apertura, bloques 1–4 (novità → escena → información), domanda finale y la escena de Moro. Los créditos van al final de todo.
    - Elegí las mejores tomas y saqué los silencios largos dentro de las tomas del canal, con reencuadres alternados para que no se noten los saltos.
-   - Saqué los "ya" de los conteos del rodaje que quedaban al arranque de nueve tomas, y tres repeticiones dentro de tomas (Bianchi con la ONU, Petrotali con el Super-Io y Ale con "uno schema descritto"); ver `analisis/problemas.md`.
+   - Saqué los "ya" de los conteos del rodaje que quedaban al arranque de nueve tomas, y tres repeticiones dentro de tomas (Bianchi con la ONU, Petrotali con el Super-Io y Ale con "uno schema descritto"). En "Abbiamo l'ultima ricostruzione, relativa all'ultimo mese" se usa el segundo intento, que es el completo; ver `analisis/problemas.md`.
    - Entre la pregunta final y la escena de Moro hay 2,5 s de negro.
 4. **Duración:**
    - El material útil daba unos 15 min. Para llegar a 11:44 apliqué el criterio del guion: **"tagliate dettagli, non concetti"**.
@@ -45,7 +45,7 @@
    - Voces: limpieza de ruido, EQ y compresión.
    - Música y efectos sintetizados por nosotros: drones, latido que acelera, impacto, whoosh, estática, pasos, puerta, respiración, reloj y crepitar. La cama del canal baja sola cuando alguien habla.
    - Final de la escena 6: la huida completa (IMG_1320) con "Fermatevi!" fuera de cuadro. Después del grito el latido queda solo, pasa al negro sin cortarse, golpe a golpe (lub-dub), se acelera un poco, se detiene de golpe a los 3 s y deja silencio. No hay disparo.
-   - El latido tiene, además del grave, un golpe seco de 150–900 Hz para que se oiga también en el celular o en parlantes de notebook.
+   - El latido es un doble golpe sordo, como en el cine: el primero (lub) más grave y largo, el segundo (dub) más agudo y corto, con ataque suave y sin agudos, para que suene "desde adentro del cuerpo" y no como un golpe en la puerta. La saturación del grave le da armónicos de 100–300 Hz, así que se oye también en el celular.
    - Mezcla a −15 LUFS, true peak ≤ −1.5 dBTP.
 9. **Créditos:** autores, clase IVS · 2026, escuela, materias, *Dichiarazione di onestà*, aviso de ficción, teléfonos de ayuda (tal como los dieron) y las 14 fuentes. **No se menciona la IA en el video**: está aparte, en `DICHIARAZIONE_IA.md`.
 
@@ -78,7 +78,7 @@
     -  661.43– 663.77 s (2.3 s): Q2 corte a negro
     -  672.67– 686.97 s (14.3 s): PCb negro + créditos (texto sobre negro)
     -  703.27– 704.50 s (1.2 s): PCb negro + créditos (texto sobre negro)
-- Loudness integrado -15.0 LUFS (objetivo −16 a −14); true peak -2.2 dBTP (≤ −1)
+- Loudness integrado -15.0 LUFS (objetivo −16 a −14); true peak -2.1 dBTP (≤ −1)
 - Los únicos tramos negros son los intencionales: el plano muy oscuro de la llave, las voces de la apertura, el cartel "Mese 12", el negro del latido, el corte tras la pregunta final y los créditos.
 - Revisé fotogramas de cada bloque, la huida (IMG_1320), el negro, la escena de Moro, los créditos y las fuentes (`work/qc/contactos.jpg`).
 - En la mezcla, "Fermatevi!" queda por encima del latido. En el negro cada latido llega al nivel máximo de la mezcla con silencio entre golpe y golpe; el último termina a los 3,0 s y siguen 2,5 s de silencio total.

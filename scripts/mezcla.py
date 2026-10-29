@@ -113,9 +113,9 @@ def main():
     # cada golpe separado (lub-dub), se acelera un poco y se detiene de golpe (alguien muere); después, silencio
     g0 = SH["S6g"]["start"]
     t, k = k1 + 0.25, 0
-    while t < g0 + 2.75:
-        place(fx, hbf, t, 0.0)
-        t += max(0.44, 0.56 - 0.012 * k)
+    while t < g0 + 2.6:
+        place(fx, hbf, t, -4.0)
+        t += max(0.5, 0.66 - 0.035 * k)
         k += 1
 
     # ---- canal: cama sutil y "glitches"
