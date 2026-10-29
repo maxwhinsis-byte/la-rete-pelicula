@@ -4,7 +4,7 @@
 | | |
 |---|---|
 | Video final | `La_rete_final.mp4`: 1920×1080, 30 fps, H.264 + AAC, **11:44.5** (704.5 s) |
-| Borrador liviano | `La_rete_borrador_720p.mp4` (65 MB) |
+| Borrador liviano | `La_rete_borrador_720p.mp4` (52 MB) |
 | Subtítulos | `La_rete.srt` (italiano; también grabados en la imagen) |
 | Dónde | GitHub `maxwhinsis-byte/la-rete-pelicula` → Release `v1.0`, y Drive "la rete videos/salida" |
 | Loudness | −15.0 LUFS integrado · true peak −2.1 dBTP |
