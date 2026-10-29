@@ -4,10 +4,10 @@
 | | |
 |---|---|
 | Video final | `La_rete_final.mp4`: 1920×1080, 30 fps, H.264 + AAC, **11:56.5** (716.5 s) |
-| Borrador liviano | `La_rete_borrador_720p.mp4` |
+| Borrador liviano | `La_rete_borrador_720p.mp4` (127 MB) |
 | Subtítulos | `La_rete.srt` (italiano; también grabados en la imagen) |
 | Dónde | GitHub `maxwhinsis-byte/la-rete-pelicula` → Release `v1.0`, y Drive "la rete videos/salida" |
-| Loudness | __LOUD__ |
+| Loudness | −15.0 LUFS integrado · true peak −2.4 dBTP |
 
 ## Qué hice
 1. **Inventario:**
@@ -60,7 +60,24 @@
 - **Verificar** los teléfonos de ayuda (Italia 800 290 290; Uruguay 2400 0302 int. 5506/5510, 0800 4141, 0800 5050) antes de entregar.
 
 ## Control de calidad
-__QC__
+- Duración 716.53 s (11:56.53) — esperado 716.53 s; OK (10:00–12:00)
+- Video h264 1920×1080 30/1 fps; audio aac 48000 Hz 2 ch
+- Duración video/audio: 716.533 / 716.533 s (diferencia 0 ms)
+- Tramos negros detectados:
+    -    5.40–   5.93 s (0.5 s): intencional
+    -    8.40–  14.17 s (5.8 s): A2/A3 apertura (voces sobre negro)
+    -   14.30–  15.07 s (0.8 s): A2/A3 apertura (voces sobre negro)
+    -   25.97–  26.90 s (0.9 s): A2/A3 apertura (voces sobre negro)
+    -  541.70– 543.73 s (2.0 s): intencional
+    -  570.03– 575.03 s (5.0 s): S6g negro de 5 s
+    -  680.17– 694.07 s (13.9 s): créditos (texto sobre negro)
+    -  710.37– 712.50 s (2.1 s): créditos (texto sobre negro)
+    -  715.03– 716.50 s (1.5 s): PCb corte final
+- Loudness integrado -15.0 LUFS (objetivo −16 a −14); true peak -2.4 dBTP (≤ −1)
+- Los dos tramos marcados como intencionales son el plano muy oscuro del mueble con la llave (5.4–5.9 s) y el cartel negro "Mese 12" (9:01).
+- Revisé fotogramas clave de cada bloque, los lower thirds, las infografías, los créditos, las fuentes y el post-créditos (`work/qc/contactos.jpg`).
+- Subtítulos: 193 líneas, ninguna de más de 2 renglones. Unas pocas van a más de 21 caracteres/s porque los actores hablan rápido (y van a 1.12×).
+- `hyperframes check`: pasó, con 0 errores.
 
 ## Dudas abiertas
 - ¿Prefieren conservar algún detalle cortado por duración, por ejemplo Selye o *dignità*? Se puede: el video tiene 3 s de margen antes de los 12:00, así que habría que sacar algo equivalente en otro lado.

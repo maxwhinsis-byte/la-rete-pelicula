@@ -10,3 +10,4 @@ composiciones/assets/mix.wav
 composiciones/renders/
 composiciones/.hyperframes/
 composiciones/node_modules/
+salida/*.mp4
