@@ -309,7 +309,8 @@ CUES: list[Cue] = [
     Cue("IMG_1360", 0.0, 5.54, "I", "Ultima ora. Due donne straniere, scomparse da giorni, sono state ritrovate senza vita."),
     Cue("IMG_1360", 5.98, 10.86, "I", "Secondo i primi elementi, erano trattenute da una rete che aveva sequestrato i loro documenti."),
     Cue("IMG_1360", 11.04, 14.64, "I", "Un uomo è stato fermato per essere ascoltato dagli investigatori."),
-    Cue("IMG_1360", 14.74, 27.92, "I", "Non sappiamo ancora se siano Dana ed Eva. Quello che abbiamo ricostruito è uno schema descritto dalle autorità."),
+    Cue("IMG_1360", 14.74, 19.4, "I", "Non sappiamo ancora se siano Dana ed Eva. Quello che abbiamo ricostruito"),
+    Cue("IMG_1360", 25.7, 27.92, "I", "è uno schema descritto dalle autorità."),
     Cue("IMG_1360", 27.92, 35.46, "I", "Dati precisi sugli omicidi di vittime di tratta sono difficili da avere, perché molti casi restano sommersi."),
     # La società
     Cue("IMG_1361", 0.91, 16.85, "B", "Parliamo di consenso: è valido solo se libero e informato. Se qualcuno ti toglie i documenti, ti isola e ti minaccia, non c'è libertà. Con una minorenne non c'è consenso possibile: la legge italiana punisce la prostituzione minorile e il suo sfruttamento."),
