@@ -40,6 +40,7 @@ class Cue:
     e: float
     who: str      # B R P I D E M T  (o "" = neutro, "sfx" = descripción sonora)
     text: str
+    sid: str = ""  # plano concreto, cuando el mismo clip se usa más de una vez
 
 
 SPEAKERS = {
@@ -177,7 +178,7 @@ CUES: list[Cue] = [
     # Apertura
     Cue("IMG_1229", 0.0, 2.6, "sfx", "[una chiave gira]"),
     Cue("IMG_1229", 2.8, 5.3, "sfx", "[un cassetto si chiude]"),
-    Cue("IMG_1231", 0.5, 3.3, "sfx", "[clic della serratura]"),
+    Cue("IMG_1231", 0.5, 3.3, "sfx", "[clic della serratura]", "A1b"),
     Cue("IMG_1237", 11.3, 14.5, "B", "Buonasera. Aggiornamento su un caso che stiamo seguendo da ieri sera."),
     Cue("IMG_1237", 14.6, 20.6, "B", "Una segnalazione anonima parla di una rete che potrebbe trattenere donne straniere in questa città."),
     Cue("IMG_1237", 20.6, 23.2, "B", "Vi diciamo cosa sappiamo e cosa ancora no."),
@@ -199,11 +200,11 @@ CUES: list[Cue] = [
     Cue("IMG_1258", 1.9, 6.6, "D", "Non ci avete parlato di nessun debito prima di arrivare."),
     Cue("IMG_1261", 0.0, 3.8, "M", "Sono cose che si dicono all'arrivo. Datemi i passaporti."),
     Cue("IMG_1261", 3.9, 9.4, "M", "In questo Paese, donne senza documenti sono un problema."),
-    Cue("IMG_1268", 0.0, 2.9, "sfx", "[silenzio]"),
+    Cue("IMG_1268", 0.0, 2.9, "sfx", "[silenzio]", "S2j"),
     Cue("IMG_1230", 0.3, 4.0, "sfx", "[un'anta si apre]"),
-    Cue("IMG_1231", 0.6, 3.6, "sfx", "[il suono della chiave]"),
+    Cue("IMG_1231", 0.6, 3.6, "sfx", "[il suono della chiave]", "S2l"),
     Cue("IMG_1266", 0.35, 4.8, "M", "Io vi proteggo. Senza di me, siete nessuno."),
-    Cue("IMG_1268", 1.4, 2.9, "sfx", "[battito]"),
+    Cue("IMG_1268", 1.4, 2.9, "sfx", "[battito]", "S2n"),
     Cue("IMG_1272", 0.0, 3.2, "sfx", "[il battito si ferma]"),
     Cue("IMG_1272", 3.3, 12.2, "B", "Fermiamoci su due dettagli della ricostruzione: un debito comunicato solo all'arrivo e i passaporti trattenuti \"per custodirli\"."),
     # Il fenomeno

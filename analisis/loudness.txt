@@ -1,0 +1,1 @@
+integrated -15.00 LUFS  true-peak~ -1.43 dBTP  dur 716.53s

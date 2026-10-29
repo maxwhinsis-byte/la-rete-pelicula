@@ -5,3 +5,8 @@ audios/
 proxies/
 work/
 *.tmp
+composiciones/assets/base.mp4
+composiciones/assets/mix.wav
+composiciones/renders/
+composiciones/.hyperframes/
+composiciones/node_modules/

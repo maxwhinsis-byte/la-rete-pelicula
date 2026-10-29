@@ -1,0 +1,422 @@
+{
+  "IMG_1229.mov": {
+    "duration": 5.4,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1230.mov": {
+    "duration": 4.133333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1231.mov": {
+    "duration": 3.733333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1237.MOV": {
+    "duration": 29.9,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1239.MOV": {
+    "duration": 44.466667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1243.mov": {
+    "duration": 3.433333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1246.mov": {
+    "duration": 15.0,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1252.mov": {
+    "duration": 5.033333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1255.mov": {
+    "duration": 13.901667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "600/19",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1256.mov": {
+    "duration": 4.6,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1258.mov": {
+    "duration": 6.966667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1261.mov": {
+    "duration": 10.566667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1266.mov": {
+    "duration": 5.921667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "600/19",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1268.mov": {
+    "duration": 2.866667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1269.mov": {
+    "duration": 3.578333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "600/19",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1272.mov": {
+    "duration": 14.503333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "600/19",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1279.mov": {
+    "duration": 9.7,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1280.mov": {
+    "duration": 2.866667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1285.mov": {
+    "duration": 14.7,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1288.mov": {
+    "duration": 14.866667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1291.mov": {
+    "duration": 3.666667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1302.mov": {
+    "duration": 5.7,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1304.mov": {
+    "duration": 5.573333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "600/19",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1307.mov": {
+    "duration": 13.3,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1311.mov": {
+    "duration": 13.8,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1312.mov": {
+    "duration": 3.866667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1314.mov": {
+    "duration": 9.6,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1339.mov": {
+    "duration": 102.283333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "600/19",
+    "audio": true,
+    "color": "bt709"
+  },
+  "IMG_1340.MOV": {
+    "duration": 41.531667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1341.MOV": {
+    "duration": 4.7817,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1345.MOV": {
+    "duration": 27.1817,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1347.MOV": {
+    "duration": 228.308333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1348.MOV": {
+    "duration": 14.8817,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1350.MOV": {
+    "duration": 133.0617,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1351.MOV": {
+    "duration": 57.48,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1353.MOV": {
+    "duration": 22.85,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1359.MOV": {
+    "duration": 144.86,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1360.MOV": {
+    "duration": 36.648333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1361.MOV": {
+    "duration": 74.896667,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1362.MOV": {
+    "duration": 200.51,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1363.MOV": {
+    "duration": 94.363333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  },
+  "IMG_1368.MOV": {
+    "duration": 8.9317,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "hevc",
+    "fps": "60/1",
+    "audio": true,
+    "color": "arib-std-b67"
+  }
+}

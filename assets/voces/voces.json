@@ -312,14 +312,6 @@
   "rate": "+0%"
  },
  {
-  "file": "07_ar_11.mp3",
-  "lang": "ar",
-  "word": "دعارة",
-  "voice": "ar-SA-HamedNeural",
-  "pitch": "-12Hz",
-  "rate": "-8%"
- },
- {
   "file": "08_zh_00.mp3",
   "lang": "zh",
   "word": "卖淫",
@@ -342,22 +334,6 @@
   "voice": "zh-CN-XiaoxiaoNeural",
   "pitch": "+10Hz",
   "rate": "+6%"
- },
- {
-  "file": "08_zh_10.mp3",
-  "lang": "zh",
-  "word": "卖淫",
-  "voice": "zh-CN-YunxiNeural",
-  "pitch": "+0Hz",
-  "rate": "+0%"
- },
- {
-  "file": "08_zh_11.mp3",
-  "lang": "zh",
-  "word": "卖淫",
-  "voice": "zh-CN-YunxiNeural",
-  "pitch": "-12Hz",
-  "rate": "-8%"
  },
  {
   "file": "09_ja_00.mp3",
@@ -470,13 +446,5 @@
   "voice": "hi-IN-MadhurNeural",
   "pitch": "+0Hz",
   "rate": "+0%"
- },
- {
-  "file": "11_hi_11.mp3",
-  "lang": "hi",
-  "word": "वेश्यावृत्ति",
-  "voice": "hi-IN-MadhurNeural",
-  "pitch": "-12Hz",
-  "rate": "-8%"
  }
 ]

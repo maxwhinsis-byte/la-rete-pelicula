@@ -30,6 +30,8 @@ WORDS = [
 ]
 # Variaciones de tono/velocidad para que parezcan muchas personas distintas
 STYLES = [("+0Hz", "+0%"), ("-12Hz", "-8%"), ("+10Hz", "+6%")]
+# Descartadas tras el control con Whisper (analisis/qc_voces_tts*.json): no se entendía la palabra
+BAD = {"08_zh_10.mp3", "08_zh_11.mp3", "07_ar_11.mp3", "11_hi_11.mp3"}
 
 
 async def main():
@@ -40,6 +42,8 @@ async def main():
                 f = OUT / f"{i:02d}_{lang}_{j}{k}.mp3"
                 if not f.exists():
                     await edge_tts.Communicate(word, voice, pitch=pitch, rate=rate).save(str(f))
+                if f.name in BAD:
+                    continue
                 meta.append(dict(file=f.name, lang=lang, word=word, voice=voice,
                                  pitch=pitch, rate=rate))
     (OUT / "voces.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
