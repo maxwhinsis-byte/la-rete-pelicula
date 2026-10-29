@@ -96,7 +96,7 @@ SHOTS: list[Shot] = [
     Shot("F1", "IMG_1339", 38.55, 53.65, "canal", "fen", rate=TALK, fx=["map:meso"]),
     Shot("F2", "IMG_1339", 58.2, 68.6, "canal", "fen", rate=TALK, punch=1.08, fx=["map:india"]),
     Shot("F3", "IMG_1339", 94.15, 100.6, "canal", "fen", rate=TALK, fx=["map:all"]),
-    Shot("F4", "IMG_1340", 0.1, 21.7, "canal", "fen", rate=TALK, punch=1.06, fx=["stat:onu"]),
+    Shot("F4", "IMG_1340", 5.45, 21.7, "canal", "fen", rate=TALK, punch=1.06, fx=["stat:onu"]),
     Shot("F5", "IMG_1340", 21.7, 40.9, "canal", "fen", rate=TALK, fx=["stat:parioli"]),
 
     # ============ BLOCCO 2 — novità (inviato sul posto, micrófono)
@@ -137,32 +137,37 @@ SHOTS: list[Shot] = [
     Shot("P1", "IMG_1359", 17.6, 52.95, "canal", "psiche", rate=TALK,
          intro=dict(who="petrotali", at=17.6, x=0.72, y=0.27, kind="canal"),
          fx=["lt:petrotali", "gfx:esio"]),
-    Shot("P2", "IMG_1359", 53.15, 81.45, "canal", "psiche", rate=TALK, punch=1.07, fx=["gfx:esio2"]),
+    Shot("P2", "IMG_1359", 53.15, 71.95, "canal", "psiche", rate=TALK, punch=1.07, fx=["gfx:esio2"]),
+    # 72.0-76.1: falso arranque de "il Super-Io…" fuera
+    Shot("P2b", "IMG_1359", 76.15, 81.45, "canal", "psiche", rate=TALK),
     Shot("P3", "IMG_1359", 81.4, 88.45, "canal", "psiche", rate=TALK),
     Shot("P4", "IMG_1359", 93.25, 110.6, "canal", "psiche", rate=TALK, punch=1.07, fx=["gfx:civilta", "gfx:freud"]),
     Shot("P7", "IMG_1359", 130.9, 133.7, "canal", "psiche", rate=TALK),
     # Scena 6 — La fuga
     Shot("S6a", None, look="black", section="s6", dur=2.4, fx=["card:Mese 12"]),
-    Shot("S6b", "IMG_1307", 0.5, 11.45, "s6", "s6", push=0.04),
-    Shot("S6c", "IMG_1312", 0.35, 3.15, "s6", "s6", push=0.05),
+    Shot("S6b", "IMG_1307", 0.5, 11.7, "s6", "s6", push=0.04),
+    Shot("S6c", "IMG_1312", 0.35, 3.55, "s6", "s6", push=0.05),
     Shot("S6d", "IMG_1314", 1.45, 3.35, "s6", "s6"),
-    Shot("S6e", "IMG_1311", 5.45, 12.3, "s6", "s6", push=0.04),
+    Shot("S6e", "IMG_1311", 6.6, 12.3, "s6", "s6", push=0.04),
     # la fuga: entran al pasillo, abren la puerta y salen corriendo; desde afuera, "Fermatevi!"
     Shot("S6f", "IMG_1320", 2.5, 12.1, "s6", "s6", fx=["fuga"]),
     # negro: latido acelerado que se detiene de golpe, y silencio
     Shot("S6g", None, look="black", section="s6", dur=5.5, fx=["sfx:fine"]),
 
     # ============ BLOCCO 4 — novità (inviato, micrófono)
-    Shot("B4n", "IMG_1360", 0.3, 35.6, "campo", "b4", rate=TALK,
+    Shot("B4n", "IMG_1360", 0.3, 19.45, "campo", "b4", rate=TALK,
          mic="MIC_General_Santander_2", mic_offset=66.99, camvol=0.12,
          fx=["ticker:b4", "lt:inviato"]),
+    # 19.45-25.65: "è uno schema…" repetido dos veces, fuera
+    Shot("B4nb", "IMG_1360", 25.65, 35.6, "campo", "b4", rate=TALK, punch=1.07,
+         mic="MIC_General_Santander_2", mic_offset=66.99, camvol=0.12),
     # La società
     Shot("SO1", "IMG_1361", 0.75, 16.95, "canal", "soc", rate=TALK, fx=["gfx:consenso2"]),
     Shot("SO2", "IMG_1361", 16.85, 46.2, "canal", "soc", rate=TALK, punch=1.07, fx=["gfx:scala"]),
 
     # ============ LA DOMANDA FINALE
     Shot("Q1", "IMG_1363", 61.5, 89.2, "canal", "finale", fx=["finale"]),
-    Shot("Q2", None, look="black", section="finale", dur=1.0),
+    Shot("Q2", None, look="black", section="finale", dur=2.5),
 
     # ============ ESCENA FINAL (antes de los créditos): Moro, en silencio, la toma entera
     Shot("PC", "IMG_1368", 0.0, 8.9, "post", "post", push=0.03),
@@ -214,7 +219,7 @@ CUES: list[Cue] = [
     Cue("IMG_1339", 68.72, 77.5, "B", "In Cina una tradizione attribuisce al ministro Guan Zhong, sette secoli prima di Cristo, un sistema al servizio dello Stato."),
     Cue("IMG_1339", 77.74, 83.76, "B", "Per l'epoca imperiale, la ricerca osserva che le regole cambiavano secondo lo status delle persone."),
     Cue("IMG_1339", 94.28, 100.48, "B", "In società diversissime torna lo stesso schema: soldi, controllo e differenze di status."),
-    Cue("IMG_1340", 0.24, 21.64, "B", "Oggi, secondo l'ONU, nel 2022 donne e ragazze erano il 61% delle vittime di tratta individuate; il 60% delle ragazze vittime era trafficato a fini di sfruttamento sessuale. Sono casi individuati: molto resta sommerso."),
+    Cue("IMG_1340", 5.5, 21.64, "B", "Oggi, secondo l'ONU, nel 2022 donne e ragazze erano il 61% delle vittime di tratta individuate; il 60% delle ragazze vittime era trafficato a fini di sfruttamento sessuale. Sono casi individuati: molto resta sommerso."),
     Cue("IMG_1340", 21.64, 40.64, "B", "E non è un problema lontano: nel 2013, a Roma, nel quartiere Parioli, due ragazze di 14 e 15 anni furono sfruttate da adulti, e furono condannati i responsabili, tra cui la madre di una delle due. Quel caso fu chiamato \"baby squillo\", un nome che sposta la colpa sulle ragazze."),
     # Blocco 2 novità
     Cue("IMG_1345", 0.96, 4.58, "I", "Aggiornamento. La polizia ha verificato la casa segnalata."),
@@ -277,7 +282,7 @@ CUES: list[Cue] = [
     Cue("IMG_1359", 46.62, 52.94, "P", "La mente, secondo Freud, è divisa in tre istanze: l'Es, il Super-Io e l'Io."),
     Cue("IMG_1359", 53.24, 61.66, "B", "Se pensiamo alla donna che ha scritto questa lettera: vuole scappare, ma resta. Cosa può accadere nella sua mente?"),
     Cue("IMG_1359", 62.52, 71.9, "P", "Quello che accade è un conflitto psichico. L'impulso è fuggire, ma l'Io valuta la realtà: il debito, il passaporto trattenuto, la paura della polizia."),
-    Cue("IMG_1359", 71.91, 81.36, "P", "Il Super-Io si trasforma in vergogna e colpa: \"Se sei qui, è colpa tua\"."),
+    Cue("IMG_1359", 76.2, 81.36, "P", "Il Super-Io si trasforma in vergogna e colpa: \"Se sei qui, è colpa tua\"."),
     Cue("IMG_1359", 81.39, 85.07, "B", "E sull'uomo che scrive \"Io vi proteggo\"?"),
     Cue("IMG_1359", 85.9, 88.4, "P", "Una possibile lettura: la razionalizzazione."),
     Cue("IMG_1359", 93.34, 98.25, "P", "Giustificazioni che permettono di ottenere ciò che si vuole senza sentire la colpa."),
@@ -289,10 +294,10 @@ CUES: list[Cue] = [
     # Scena 6
     Cue("IMG_1307", 0.72, 3.2, "D", "Un anno. Non può essere per sempre."),
     Cue("IMG_1307", 4.04, 7.9, "E", "Beh, gli chiediamo i passaporti. E se dice di no…"),
-    Cue("IMG_1307", 8.22, 11.4, "D", "Se dice di no, allora scappiamo comunque."),
-    Cue("IMG_1312", 0.46, 3.1, "D", "Abbiamo lavorato un anno. Vogliamo i nostri passaporti."),
+    Cue("IMG_1307", 8.22, 11.65, "D", "Se dice di no, allora scappiamo comunque."),
+    Cue("IMG_1312", 0.46, 3.5, "D", "Abbiamo lavorato un anno. Vogliamo i nostri passaporti."),
     Cue("IMG_1314", 2.35, 3.3, "M", "No."),
-    Cue("IMG_1311", 5.5, 7.6, "E", "Abbiamo un accordo."),
+    Cue("IMG_1311", 6.65, 7.6, "E", "Abbiamo un accordo."),
     Cue("IMG_1311", 8.28, 12.2, "M", "Voi siete qui perché io lo decido."),
     Cue("IMG_1320", 2.6, 8.3, "sfx", "[respiro affannoso, passi]"),
     Cue("IMG_1320", 8.4, 10.6, "sfx", "[la porta si apre, corrono]"),

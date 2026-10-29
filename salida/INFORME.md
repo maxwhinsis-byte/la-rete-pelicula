@@ -3,11 +3,11 @@
 ## Entrega
 | | |
 |---|---|
-| Video final | `La_rete_final.mp4`: 1920×1080, 30 fps, H.264 + AAC, **11:57.6** (717.6 s) |
-| Borrador liviano | `La_rete_borrador_720p.mp4` (64 MB) |
+| Video final | `La_rete_final.mp4`: 1920×1080, 30 fps, H.264 + AAC, **11:44.5** (704.5 s) |
+| Borrador liviano | `La_rete_borrador_720p.mp4` (63 MB) |
 | Subtítulos | `La_rete.srt` (italiano; también grabados en la imagen) |
 | Dónde | GitHub `maxwhinsis-byte/la-rete-pelicula` → Release `v1.0`, y Drive "la rete videos/salida" |
-| Loudness | −15.0 LUFS integrado · true peak −2.3 dBTP |
+| Loudness | −15.0 LUFS integrado · true peak −2.4 dBTP |
 
 ## Qué hice
 1. **Inventario:**
@@ -22,9 +22,10 @@
 3. **Montaje** (`scripts/edl.py`, `analisis/EDL.md`):
    - Respeta la estructura del guion: apertura, bloques 1–4 (novità → escena → información), domanda finale y la escena de Moro. Los créditos van al final de todo.
    - Elegí las mejores tomas y saqué los silencios largos dentro de las tomas del canal, con reencuadres alternados para que no se noten los saltos.
-   - Saqué los "ya" de los conteos del rodaje que quedaban al arranque de nueve tomas (ver `analisis/problemas.md`).
+   - Saqué los "ya" de los conteos del rodaje que quedaban al arranque de nueve tomas, y tres repeticiones dentro de tomas (Bianchi con la ONU, Petrotali con el Super-Io y Ale con "uno schema descritto"); ver `analisis/problemas.md`.
+   - Entre la pregunta final y la escena de Moro hay 2,5 s de negro.
 4. **Duración:**
-   - El material útil daba unos 15 min. Para llegar a 11:57 apliqué el criterio del guion: **"tagliate dettagli, non concetti"**.
+   - El material útil daba unos 15 min. Para llegar a 11:44 apliqué el criterio del guion: **"tagliate dettagli, non concetti"**.
    - Corté detalles: las tres fases de Selye, "con prudenza…", el ejemplo de las hormonas sexuales, la lista de mitos y la tradición china. Saqué también "per l'epoca imperiale", "la prostituzione sacra", la pregunta sobre los límites de Freud (el concepto queda en pantalla: "Freud è uno strumento filosofico…") y los párrafos de *dignità* y *stereotipi* (la idea de *stereotipi* ya está en el caso Parioli).
    - Las partes habladas del canal van a **1.12× con el tono preservado**.
 5. **Color:**
@@ -61,9 +62,9 @@
 - **Verificar** los teléfonos de ayuda (Italia 800 290 290; Uruguay 2400 0302 int. 5506/5510, 0800 4141, 0800 5050) antes de entregar.
 
 ## Control de calidad
-- Duración 717.60 s (11:57.60) — esperado 717.60 s; OK (10:00–12:00)
+- Duración 704.53 s (11:44.53) — esperado 704.53 s; OK (10:00–12:00)
 - Video h264 1920×1080 30/1 fps; audio aac 48000 Hz 2 ch
-- Duración video/audio: 717.600 / 717.600 s (diferencia 0 ms)
+- Duración video/audio: 704.533 / 704.533 s (diferencia 0 ms)
 - Tramos negros detectados:
     -    5.40–   5.93 s (0.5 s): A1 plano oscuro de la llave
     -    8.40–  10.47 s (2.1 s): A2/A3 apertura (voces sobre negro)
@@ -71,12 +72,12 @@
     -   11.90–  14.17 s (2.3 s): A2/A3 apertura (voces sobre negro)
     -   14.30–  15.07 s (0.8 s): A2/A3 apertura (voces sobre negro)
     -   25.97–  26.90 s (0.9 s): A2/A3 apertura (voces sobre negro)
-    -  536.90– 538.90 s (2.0 s): S6a cartel Mese 12
-    -  571.00– 576.50 s (5.5 s): S6g negro con el latido
-    -  676.00– 676.83 s (0.8 s): Q2 corte a negro
-    -  685.73– 700.03 s (14.3 s): PCb negro + créditos (texto sobre negro)
-    -  716.33– 717.57 s (1.2 s): PCb negro + créditos (texto sobre negro)
-- Loudness integrado -15.0 LUFS (objetivo −16 a −14); true peak -2.3 dBTP (≤ −1)
+    -  528.37– 530.37 s (2.0 s): S6a cartel Mese 12
+    -  561.97– 567.47 s (5.5 s): S6g negro con el latido
+    -  661.43– 663.77 s (2.3 s): Q2 corte a negro
+    -  672.67– 686.97 s (14.3 s): PCb negro + créditos (texto sobre negro)
+    -  703.27– 704.50 s (1.2 s): PCb negro + créditos (texto sobre negro)
+- Loudness integrado -15.0 LUFS (objetivo −16 a −14); true peak -2.4 dBTP (≤ −1)
 - Los únicos tramos negros son los intencionales: el plano muy oscuro de la llave, las voces de la apertura, el cartel "Mese 12", el negro del latido, el corte tras la pregunta final y los créditos.
 - Revisé fotogramas de cada bloque, la huida (IMG_1320), el negro, la escena de Moro, los créditos y las fuentes (`work/qc/contactos.jpg`).
 - En la mezcla, "Fermatevi!" queda unos 9 dB por encima del latido; el latido se corta a los 3 s del negro y siguen 2,5 s de silencio total.
@@ -84,4 +85,4 @@
 - `hyperframes check`: pasó, con 0 errores.
 
 ## Dudas abiertas
-- ¿Prefieren conservar algún detalle cortado por duración, por ejemplo Selye o *dignità*? Se puede: el video tiene 2 s de margen antes de los 12:00, así que habría que sacar algo equivalente en otro lado.
+- ¿Prefieren conservar algún detalle cortado por duración, por ejemplo Selye o *dignità*? Se puede: el video tiene 15 s de margen antes de los 12:00.

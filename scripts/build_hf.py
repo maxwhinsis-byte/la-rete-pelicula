@@ -520,7 +520,7 @@ def infographics():
     js.append(f'tl.to("#{i} .pnl-in",{{opacity:0,duration:0.4}},{t1 + 0.05:.3f});')
 
     # --- ONU
-    t0, t1 = at_cue("IMG_1340", 0.24)
+    t0, t1 = at_cue("IMG_1340", 5.5)
     panel(t0 + 0.8, t1 - t0 - 0.6,
           '<div class="pi pnl-h">UNODC · Rapporto globale 2024 <em>[7]</em></div>'
           '<div class="pi big">61<small>%</small></div><div class="pi cap">delle vittime di tratta individuate nel 2022: donne e ragazze</div>'
@@ -594,7 +594,7 @@ def infographics():
     js.append(f'tl.fromTo("#{i} .pi",{{opacity:0,y:10}},{{opacity:1,y:0,duration:0.5,stagger:1.3}},{t0 + 1.2:.3f});')
     # --- La psiche
     t0, _ = at_cue("IMG_1359", 46.62)
-    _, t1 = at_cue("IMG_1359", 71.91)
+    _, t1 = at_cue("IMG_1359", 76.2)
     i = clip("pillars", t0 + 0.6, t1 - t0 + 0.2,
              '<div class="pl-in"><div class="pl p-es"><b>ES</b><span>principio di piacere</span><em>«scappare»</em></div>'
              '<div class="pl p-io"><b>IO</b><span>principio di realtà</span><em>debito · passaporto · polizia</em></div>'
@@ -603,7 +603,7 @@ def infographics():
     js.append(f'tl.fromTo("#{i} .pl",{{opacity:0,y:-20}},{{opacity:1,y:0,duration:0.5,stagger:0.3,ease:"power3.out"}},{t0 + 0.6:.3f});')
     js.append(f'tl.fromTo("#{i} .pl-src",{{opacity:0}},{{opacity:1,duration:0.4}},{t0 + 1.6:.3f});')
     tq, _ = at_cue("IMG_1359", 62.52)
-    tz, _ = at_cue("IMG_1359", 71.91)
+    tz, _ = at_cue("IMG_1359", 76.2)
     js.append(f'tl.fromTo("#{i} .pl em",{{opacity:0}},{{opacity:1,duration:0.4,stagger:0.5}},{tq + 1.5:.3f});')
     js.append(f'tl.to("#{i} .p-io",{{borderColor:"rgba(215,38,61,0.9)",duration:0.4}},{tq + 2.5:.3f});')
     js.append(f'tl.to("#{i} .p-io",{{borderColor:"rgba(143,163,191,0.35)",duration:0.4}},{tz:.3f});')

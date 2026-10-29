@@ -60,7 +60,7 @@ points = [("apertura voces", SH["A2"]["start"] + 12), ("título", SH["A3"]["star
           ("bloque 1", SH["B1n"]["start"] + 5), ("escena 2", SH["S2f"]["body_start"] + 4), ("transición 1", SH["T1"]["start"] + 9),
           ("fenómeno", SH["F1"]["start"] + 8), ("bloque 2", SH["B2n.0"]["start"] + 5), ("escena 4", SH["S4f"]["start"] + 4),
           ("cuerpo HPA", SH["C3.0"]["start"] + 18), ("bloque 3", SH["B3n"]["start"] + 18), ("psique", SH["P1"]["start"] + 32),
-          ("escena 6", SH["S6e"]["start"] + 3), ("fuga", SH["S6f"]["start"] + 7), ("bloque 4", SH["B4n.0"]["start"] + 4), ("sociedad", SH["SO2"]["start"] + 16),
+          ("escena 6", SH["S6e"]["start"] + 3), ("fuga", SH["S6f"]["start"] + 7), ("bloque 4", SH["B4n"]["start"] + 4), ("sociedad", SH["SO2"]["start"] + 16),
           ("final", SH["Q1"]["start"] + 12), ("créditos", SH["CR"]["start"] + 3), ("ayuda", SH["CR"]["start"] + 15),
           ("fuentes", SH["CR"]["start"] + 25), ("Moro final", SH["PC"]["start"] + 7.6)]
 tiles = []

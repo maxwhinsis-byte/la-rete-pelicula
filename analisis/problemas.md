@@ -28,6 +28,10 @@
 - Los demás clips tienen buen audio de cámara. Se limpiaron con reducción de ruido, ecualización y compresión suave.
 
 ## Tomas descartadas
+- **IMG_1340** 0:00–0:05: primer intento de "Oggi secondo l'ONU…" y "va de vuelta". Empieza en la repetición buena (5.45 s).
+- **IMG_1359** 1:12–1:16: falso arranque de "il Super-Io…" y un comentario fuera de guion. Se salta a la toma buena (76.15 s).
+- **IMG_1360** 0:19–0:26: "è uno schema descritto" dicho tres veces. Queda una sola.
+- **IMG_1311** 5.3–5.5 s: el "No." de Moro en plano general (ya está en su primer plano, IMG_1314). Se oía como un "ya" pegado al corte.
 - **IMG_1339** 1ª toma (0:00–0:27): se corta en "In India…". Se usó la 2ª.
 - **IMG_1347:** varias tomas falladas ("Che gueta", "Selye… Esto lo sacamos", "De vuelta"). Se usaron las limpias.
 - **IMG_1348:** dice "un'azione libera". Se usó IMG_1350, que dice "una decisione libera".
