@@ -80,18 +80,17 @@ SHOTS: list[Shot] = [
          intro=dict(who="dana", at=4.0, x=0.46, y=0.33, kind="storia")),
     Shot("S2d", "IMG_1246", 12.2, 14.9, "s2", "s2",
          intro=dict(who="eva", at=12.2, x=0.72, y=0.30, kind="storia")),
-    Shot("S2e", "IMG_1252", 0.0, 4.45, "s2", "s2"),
+    Shot("S2e", "IMG_1252", 0.35, 4.45, "s2", "s2"),
     Shot("S2f", "IMG_1255", 0.45, 12.75, "s2", "s2", push=0.04,
          intro=dict(who="moro", at=0.45, x=0.68, y=0.22, kind="storia")),
     Shot("S2g", "IMG_1256", 0.0, 2.9, "s2", "s2"),
     Shot("S2h", "IMG_1258", 1.6, 6.6, "s2", "s2", push=0.04),
     Shot("S2i", "IMG_1261", 0.0, 9.45, "s2", "s2", push=0.03),
     Shot("S2j", "IMG_1268", 0.0, 2.9, "s2", "s2"),
-    Shot("S2l", "IMG_1231", 0.4, 3.7, "s2", "s2"),
     Shot("S2m", "IMG_1266", 0.2, 4.9, "s2", "s2", push=0.05),
     Shot("S2n", "IMG_1268", 1.4, 2.9, "s2", "s2", push=0.06, fx=["red", "freeze_end"]),
     # Transizione 1 — Eva diventa Bianchi
-    Shot("T1", "IMG_1272", 0.0, 12.3, "transform", "t1", fx=["transform"]),
+    Shot("T1", "IMG_1272", 0.15, 12.3, "transform", "t1", fx=["transform"]),
 
     # ============ BLOCCO 1 — Il fenomeno
     Shot("F1", "IMG_1339", 38.55, 53.65, "canal", "fen", rate=TALK, fx=["map:meso"]),
@@ -105,15 +104,15 @@ SHOTS: list[Shot] = [
          mic="MIC_New_Recording_5", mic_offset=72.97, camvol=0.12, fx=["ticker:b2", "lt:inviato"]),
     # Scena 4 — Il controllo
     Shot("S4a", "PHOTO:IMG_1273", look="photo", section="s4", dur=3.0, fx=["card:Mese 4"]),
-    Shot("S4b", "IMG_1279", 0.3, 8.3, "s4", "s4", push=0.04),
+    Shot("S4b", "IMG_1279", 0.36, 8.3, "s4", "s4", push=0.04),
     Shot("S4c", "PHOTO:IMG_1274", look="photo", section="s4", dur=2.6, fx=["card:Mese 6", "rot90"]),
     Shot("S4e", "IMG_1285", 3.5, 13.9, "s4", "s4"),
     Shot("S4f", "IMG_1288", 0.0, 11.0, "s4", "s4", push=0.04),
     Shot("S4g", "PHOTO:IMG_1275", look="photo", section="s4", dur=2.8, fx=["card:Mese 11"]),
-    Shot("S4h", "IMG_1291", 0.4, 3.7, "s4", "s4", push=0.05),
-    Shot("S4i", "IMG_1302", 0.0, 3.2, "s4", "s4", fx=["freeze_end"]),
+    Shot("S4h", "IMG_1291", 0.45, 3.7, "s4", "s4", push=0.05),
+    Shot("S4i", "IMG_1302", 0.2, 3.2, "s4", "s4", fx=["freeze_end"]),
     # Transizione 2 — Eva diventa Bianchi; Rossi già in studio
-    Shot("T2", "IMG_1304", 0.0, 5.6, "transform", "t2", fx=["transform"]),
+    Shot("T2", "IMG_1304", 0.3, 5.6, "transform", "t2", fx=["transform"]),
 
     # ============ BLOCCO 2 — Il corpo
     Shot("C0", "IMG_1347", 21.35, 26.85, "canal", "corpo", rate=TALK,
@@ -131,7 +130,7 @@ SHOTS: list[Shot] = [
     Shot("C12b", "IMG_1351", 19.0, 44.3, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:miti"]),
 
     # ============ BLOCCO 3 — novità (Bianchi sul posto, micrófono)
-    Shot("B3n", "IMG_1353", 0.0, 21.5, "campo", "b3", rate=TALK,
+    Shot("B3n", "IMG_1353", 0.4, 21.5, "campo", "b3", rate=TALK,
          mic="MIC_General_Santander", mic_offset=168.82, camvol=0.12,
          fx=["ticker:b3", "lt:bianchi_campo", "gfx:frasi"]),
     # La psiche — intervista
@@ -146,30 +145,31 @@ SHOTS: list[Shot] = [
     Shot("S6a", None, look="black", section="s6", dur=2.4, fx=["card:Mese 12"]),
     Shot("S6b", "IMG_1307", 0.5, 11.45, "s6", "s6", push=0.04),
     Shot("S6c", "IMG_1312", 0.35, 3.15, "s6", "s6", push=0.05),
-    Shot("S6d", "IMG_1314", 0.0, 2.3, "s6", "s6"),
+    Shot("S6d", "IMG_1314", 1.45, 3.35, "s6", "s6"),
     Shot("S6e", "IMG_1311", 5.45, 12.3, "s6", "s6", push=0.04),
-    Shot("S6f", "IMG_1243", 0.0, 3.4, "s6", "s6", fx=["fuga"]),
-    Shot("S6g", None, look="black", section="s6", dur=5.0, fx=["sfx:fine"]),
+    # la fuga: entran al pasillo, abren la puerta y salen corriendo; desde afuera, "Fermatevi!"
+    Shot("S6f", "IMG_1320", 2.5, 12.1, "s6", "s6", fx=["fuga"]),
+    # negro: latido acelerado que se detiene de golpe, y silencio
+    Shot("S6g", None, look="black", section="s6", dur=5.5, fx=["sfx:fine"]),
 
     # ============ BLOCCO 4 — novità (inviato, micrófono)
-    Shot("B4n", "IMG_1360", 0.0, 35.6, "campo", "b4", rate=TALK,
+    Shot("B4n", "IMG_1360", 0.3, 35.6, "campo", "b4", rate=TALK,
          mic="MIC_General_Santander_2", mic_offset=66.99, camvol=0.12,
          fx=["ticker:b4", "lt:inviato"]),
     # La società
     Shot("SO1", "IMG_1361", 0.75, 16.95, "canal", "soc", rate=TALK, fx=["gfx:consenso2"]),
     Shot("SO2", "IMG_1361", 16.85, 46.2, "canal", "soc", rate=TALK, punch=1.07, fx=["gfx:scala"]),
-    Shot("SO3", "IMG_1362", 137.3, 143.3, "canal", "soc", rate=TALK, fx=["gfx:dignita"]),
 
     # ============ LA DOMANDA FINALE
     Shot("Q1", "IMG_1363", 61.5, 89.2, "canal", "finale", fx=["finale"]),
     Shot("Q2", None, look="black", section="finale", dur=1.0),
 
+    # ============ ESCENA FINAL (antes de los créditos): Moro, en silencio, la toma entera
+    Shot("PC", "IMG_1368", 0.0, 8.9, "post", "post", push=0.03),
+    Shot("PCb", None, look="black", section="post", dur=1.2),
     # ============ CREDITI (gráfico sobre negro)
     Shot("CR", None, look="black", section="crediti", dur=29.5),
-    Shot("CR2", None, look="black", section="crediti", dur=2.0),
-    # ============ POST-CREDITI
-    Shot("PC", "IMG_1368", 0.0, 2.4, "post", "post", push=0.03),
-    Shot("PCb", None, look="black", section="post", dur=1.5),
+    Shot("CR2", None, look="black", section="crediti", dur=1.0),
 ]
 
 # ---------------------------------------------------------------- subtítulos (tiempo de fuente)
@@ -202,7 +202,6 @@ CUES: list[Cue] = [
     Cue("IMG_1261", 3.9, 9.4, "M", "In questo Paese, donne senza documenti sono un problema."),
     Cue("IMG_1268", 0.0, 2.9, "sfx", "[silenzio]", "S2j"),
     Cue("IMG_1230", 0.3, 4.0, "sfx", "[un'anta si apre]"),
-    Cue("IMG_1231", 0.6, 3.6, "sfx", "[il suono della chiave]", "S2l"),
     Cue("IMG_1266", 0.35, 4.8, "M", "Io vi proteggo. Senza di me, siete nessuno."),
     Cue("IMG_1268", 1.4, 2.9, "sfx", "[battito]", "S2n"),
     Cue("IMG_1272", 0.0, 3.2, "sfx", "[il battito si ferma]"),
@@ -292,13 +291,15 @@ CUES: list[Cue] = [
     Cue("IMG_1307", 4.04, 7.9, "E", "Beh, gli chiediamo i passaporti. E se dice di no…"),
     Cue("IMG_1307", 8.22, 11.4, "D", "Se dice di no, allora scappiamo comunque."),
     Cue("IMG_1312", 0.46, 3.1, "D", "Abbiamo lavorato un anno. Vogliamo i nostri passaporti."),
-    Cue("IMG_1314", 0.0, 2.3, "M", "No."),
+    Cue("IMG_1314", 2.35, 3.3, "M", "No."),
     Cue("IMG_1311", 5.5, 7.6, "E", "Abbiamo un accordo."),
     Cue("IMG_1311", 8.28, 12.2, "M", "Voi siete qui perché io lo decido."),
-    Cue("IMG_1243", 0.0, 3.4, "sfx", "[respiro affannoso, passi]"),
-    Cue("BLACK:S6g", 0.0, 1.8, "sfx", "[una porta si chiude]"),
-    Cue("BLACK:S6g", 1.9, 3.6, "sfx", "[silenzio]"),
-    Cue("BLACK:S6g", 3.7, 5.0, "sfx", "[un battito… che si ferma]"),
+    Cue("IMG_1320", 2.6, 8.3, "sfx", "[respiro affannoso, passi]"),
+    Cue("IMG_1320", 8.4, 10.6, "sfx", "[la porta si apre, corrono]"),
+    Cue("IMG_1320", 10.75, 11.9, "M", "Fermatevi!"),
+    Cue("BLACK:S6g", 0.0, 2.9, "sfx", "[battito sempre più veloce]"),
+    Cue("BLACK:S6g", 3.0, 4.3, "sfx", "[il battito si ferma]"),
+    Cue("BLACK:S6g", 4.4, 5.5, "sfx", "[silenzio]"),
     # Blocco 4 novità
     Cue("IMG_1360", 0.0, 5.54, "I", "Ultima ora. Due donne straniere, scomparse da giorni, sono state ritrovate senza vita."),
     Cue("IMG_1360", 5.98, 10.86, "I", "Secondo i primi elementi, erano trattenute da una rete che aveva sequestrato i loro documenti."),
@@ -317,10 +318,10 @@ CUES: list[Cue] = [
     Cue("IMG_1363", 70.56, 79.24, "T", "Quanto è libera una scelta quando le alternative sono state decise dal bisogno, dal desiderio indotto o dal potere di altri?"),
     Cue("IMG_1363", 79.54, 82.56, "P", "E allora: il nostro corpo determina ciò che siamo…"),
     Cue("IMG_1363", 83.02, 88.8, "P", "…oppure siamo noi, attraverso la psiche e la società, a dare significato al nostro corpo?"),
-    # Post-crediti
-    Cue("IMG_1368", 0.0, 0.45, "sfx", "[respiro]"),
+    # Escena final: Moro cuelga, mira el pasaporte y sonríe
     Cue("IMG_1368", 0.5, 1.7, "M", "Ho già risolto tutto."),
-    Cue("IMG_1368", 1.75, 2.4, "sfx", "[il telefono si chiude]"),
+    Cue("IMG_1368", 2.9, 4.4, "sfx", "[riaggancia il telefono]"),
+    Cue("IMG_1368", 5.8, 8.8, "sfx", "[silenzio]"),
 ]
 
 

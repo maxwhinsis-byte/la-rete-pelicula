@@ -98,12 +98,16 @@ def main():
     f0 = SH["S6f"]["start"]
     beats(SH["S6e"]["start"] + 2.0, SH["S6f"]["end"], 95, 150, -6)
     place(fx, load("sfx_respiro.wav"), f0, -8)
-    place(fx, load("sfx_pasos.wav"), f0 + 0.6, -9)
+    place(fx, load("sfx_pasos.wav"), f0 + 1.2, -11)
+    place(fx, load("sfx_pasos.wav"), f0 + 6.0, -7)
     place(fx, load("sfx_riser.wav")[-int(4 * SR):], SH["S6f"]["end"] - 4.0, -14)
+    # negro: el latido sigue, se acelera y se detiene de golpe (alguien muere); después, silencio
     g0 = SH["S6g"]["start"]
-    place(fx, load("sfx_puerta.wav"), g0 + 0.15, -2)
-    place(fx, hb, g0 + 3.0, -10)
-    place(fx, hb, g0 + 4.1, -16)
+    t, k = g0 + 0.05, 0
+    while t < g0 + 2.75:
+        place(fx, hb, t, -5 + 0.4 * k)
+        t += 60 / (150 + 9 * k)
+        k += 1
 
     # ---- canal: cama sutil y "glitches"
     bed = load("bed_canal.wav")
@@ -141,11 +145,9 @@ def main():
     place(music, loop_to(load("drone_cred.wav"), q1 - q0), q0, -21, 2.0, 0.08)
     c0, c1 = span("CR", "CR2")
     place(music, loop_to(load("drone_cred.wav"), c1 - c0), c0, -15, 2.0, 2.0)
-    # post-créditos: silencio, respiración, latido lejano, crepitar tenue
+    # escena final de Moro: casi en silencio, solo su toma y un drone muy bajo
     p0 = SH["PC"]["start"]
-    place(music, load("drone_post.wav"), p0 - 0.5, -24, 0.5, 0.05, dur=SH["PC"]["end"] - p0 + 0.5)
-    place(fx, load("sfx_crepitio.wav"), p0, -20, 0.3, 0.3, dur=SH["PC"]["end"] - p0)
-    place(fx, hb, p0 + 0.9, -20)
+    place(music, loop_to(load("drone_post.wav"), SH["PC"]["end"] - p0), p0, -32, 1.0, 0.6)
 
     # ---- ducking de música bajo la voz
     def movavg(x, w):
@@ -158,9 +160,22 @@ def main():
     duck = movavg(duck, int(0.25 * SR)).astype(np.float32)
     music[:] = music * duck[:, None]
 
+    # "Fermatevi!" (IMG_1320, 10.75-11.6 s de fuente) tiene que oírse por encima del latido y el riser
+    s6f = next(s for s in TL["shots"] if s["id"] == "S6f")
+    k0 = s6f["start"] + (10.65 - s6f["tin"]) / s6f["rate"]
+    k1 = s6f["start"] + (11.7 - s6f["tin"]) / s6f["rate"]
+    a, b, r = int(k0 * SR), int(k1 * SR), int(0.12 * SR)
+    g = np.ones(N, np.float32)
+    g[a:b] = db(-13)
+    g[a - r:a] = np.linspace(1, db(-13), r)
+    g[b:b + r] = np.linspace(db(-13), 1, r)
+    fx[:] = fx * g[:, None]
+    music[:] = music * g[:, None]
+    dia[a - r:b + r] *= db(4)
+
     mix = dia + music + fx
     # cortes en seco a negro: silencio absoluto donde el guion lo pide
-    for sid, a_off, b_off in [("Q2", 0.05, 0.0), ("PCb", 0.0, 0.0)]:
+    for sid, a_off, b_off in [("Q2", 0.05, 0.0), ("PCb", 0.0, 0.0), ("S6g", 3.1, 0.0)]:
         a, b = int((SH[sid]["start"] + a_off) * SR), int((SH[sid]["end"] - b_off) * SR)
         mix[a:b] *= 0.0
 

@@ -3,11 +3,11 @@
 ## Entrega
 | | |
 |---|---|
-| Video final | `La_rete_final.mp4`: 1920×1080, 30 fps, H.264 + AAC, **11:56.5** (716.5 s) |
-| Borrador liviano | `La_rete_borrador_720p.mp4` (127 MB) |
+| Video final | `La_rete_final.mp4`: 1920×1080, 30 fps, H.264 + AAC, **11:57.6** (717.6 s) |
+| Borrador liviano | `La_rete_borrador_720p.mp4` (64 MB) |
 | Subtítulos | `La_rete.srt` (italiano; también grabados en la imagen) |
 | Dónde | GitHub `maxwhinsis-byte/la-rete-pelicula` → Release `v1.0`, y Drive "la rete videos/salida" |
-| Loudness | −15.0 LUFS integrado · true peak −2.4 dBTP |
+| Loudness | −15.0 LUFS integrado · true peak −2.3 dBTP |
 
 ## Qué hice
 1. **Inventario:**
@@ -20,11 +20,12 @@
    - Sincronicé por correlación cruzada de envolventes, con verificación cada 2 s a lo largo del clip. No hay deriva.
    - El micrófono reemplaza la voz de cámara; el ambiente de cámara queda al 12 %.
 3. **Montaje** (`scripts/edl.py`, `analisis/EDL.md`):
-   - Respeta la estructura del guion: apertura, bloques 1–4 (novità → escena → información), domanda finale, créditos y post-créditos.
+   - Respeta la estructura del guion: apertura, bloques 1–4 (novità → escena → información), domanda finale y la escena de Moro. Los créditos van al final de todo.
    - Elegí las mejores tomas y saqué los silencios largos dentro de las tomas del canal, con reencuadres alternados para que no se noten los saltos.
+   - Saqué los "ya" de los conteos del rodaje que quedaban al arranque de nueve tomas (ver `analisis/problemas.md`).
 4. **Duración:**
-   - El material útil daba unos 15 min. Para llegar a 11:56 apliqué el criterio del guion: **"tagliate dettagli, non concetti"**.
-   - Corté detalles: las tres fases de Selye, "con prudenza…", el ejemplo de las hormonas sexuales, la lista de mitos y la tradición china. Saqué también "per l'epoca imperiale", "la prostituzione sacra", la pregunta sobre los límites de Freud (el concepto queda en pantalla: "Freud è uno strumento filosofico…") y el párrafo de *dignità*.
+   - El material útil daba unos 15 min. Para llegar a 11:57 apliqué el criterio del guion: **"tagliate dettagli, non concetti"**.
+   - Corté detalles: las tres fases de Selye, "con prudenza…", el ejemplo de las hormonas sexuales, la lista de mitos y la tradición china. Saqué también "per l'epoca imperiale", "la prostituzione sacra", la pregunta sobre los límites de Freud (el concepto queda en pantalla: "Freud è uno strumento filosofico…") y los párrafos de *dignità* y *stereotipi* (la idea de *stereotipi* ya está en el caso Parioli).
    - Las partes habladas del canal van a **1.12× con el tono preservado**.
 5. **Color:**
    - Canal: limpio y frío.
@@ -42,42 +43,45 @@
 8. **Sonido:**
    - Voces: limpieza de ruido, EQ y compresión.
    - Música y efectos sintetizados por nosotros: drones, latido que acelera, impacto, whoosh, estática, pasos, puerta, respiración, reloj y crepitar. La cama del canal baja sola cuando alguien habla.
-   - Final de la escena 6: 5 s de negro con la puerta, el silencio y un latido que se apaga.
+   - Final de la escena 6: la huida completa (IMG_1320) con "Fermatevi!" fuera de cuadro. Corte a negro: un latido que se acelera, se detiene de golpe y deja silencio. No hay disparo.
    - Mezcla a −15 LUFS, true peak ≤ −1.5 dBTP.
 9. **Créditos:** autores, clase IVS · 2026, escuela, materias, *Dichiarazione di onestà*, aviso de ficción, teléfonos de ayuda (tal como los dieron) y las 14 fuentes. **No se menciona la IA en el video**: está aparte, en `DICHIARAZIONE_IA.md`.
 
 ## Decisiones tomadas por mi cuenta
 - **Novità en exteriores:** las de los bloques 2 y 4 las hace Ale como enviado en exteriores, y la del 3 Lara, porque así se grabaron. A Ale no le inventé un nombre: su lower third dice "In collegamento · Inviato di Dossier".
 - **"Due uomini":** en IMG_1360 Ale dice "due **uomini** stranieri… trattenuti". El subtítulo dice "**donne**", para no romper la historia. Ver más abajo.
-- **Post-créditos:** se grabó a Moro colgando el teléfono ("Ho già risolto tutto."), no fumando. Lo usé así, con humo digital muy tenue en la luz.
+- **Escena de Moro:** va después de la pregunta final y antes de los créditos, entera y casi en silencio: cuelga ("Ho già risolto tutto."), mira el pasaporte y sonríe. No fuma, así que saqué el humo digital.
 - **Transformación de Lara:** Dana está quieta en las dos tomas, así que no hizo falta rotoscopia. Resolví el pasaje con un congelado, el latido que se detiene y un cambio gradual de color de la historia al canal.
 - **Corrección de mirada:** no la apliqué. No había una herramienta simple para este equipo y la mayoría de los planos a cámara ya funcionan.
 - **Créditos:** en el reparto puse "Ricerca, testi, regia e interpretazione: tutti e tre gli autori", porque me dijeron "todos hicimos todo".
 
 ## Qué falta o convendría regrabar
 - **IMG_1360 (10 s):** "Ultima ora. Due **donne** straniere, scomparse… sono state ritrovate senza vita… erano trattenute…". Hoy se oye "uomini".
-- **Opcional:** las líneas del guion que no se grabaron (lista en `analisis/problemas.md`). Las más notorias son las definiciones de *Il fenomeno*, los modelos legales (ley Merlin / ley 17.515) y el plano de la puerta que se cierra en la escena 6.
+- **Opcional:** las líneas del guion que no se grabaron (lista en `analisis/problemas.md`). Las más notorias son las definiciones de *Il fenomeno* y los modelos legales (ley Merlin / ley 17.515).
 - **Verificar** los teléfonos de ayuda (Italia 800 290 290; Uruguay 2400 0302 int. 5506/5510, 0800 4141, 0800 5050) antes de entregar.
 
 ## Control de calidad
-- Duración 716.53 s (11:56.53) — esperado 716.53 s; OK (10:00–12:00)
+- Duración 717.60 s (11:57.60) — esperado 717.60 s; OK (10:00–12:00)
 - Video h264 1920×1080 30/1 fps; audio aac 48000 Hz 2 ch
-- Duración video/audio: 716.533 / 716.533 s (diferencia 0 ms)
+- Duración video/audio: 717.600 / 717.600 s (diferencia 0 ms)
 - Tramos negros detectados:
-    -    5.40–   5.93 s (0.5 s): intencional
-    -    8.40–  14.17 s (5.8 s): A2/A3 apertura (voces sobre negro)
+    -    5.40–   5.93 s (0.5 s): A1 plano oscuro de la llave
+    -    8.40–  10.47 s (2.1 s): A2/A3 apertura (voces sobre negro)
+    -   10.50–  11.87 s (1.4 s): A2/A3 apertura (voces sobre negro)
+    -   11.90–  14.17 s (2.3 s): A2/A3 apertura (voces sobre negro)
     -   14.30–  15.07 s (0.8 s): A2/A3 apertura (voces sobre negro)
     -   25.97–  26.90 s (0.9 s): A2/A3 apertura (voces sobre negro)
-    -  541.70– 543.73 s (2.0 s): intencional
-    -  570.03– 575.03 s (5.0 s): S6g negro de 5 s
-    -  680.17– 694.07 s (13.9 s): créditos (texto sobre negro)
-    -  710.37– 712.50 s (2.1 s): créditos (texto sobre negro)
-    -  715.03– 716.50 s (1.5 s): PCb corte final
-- Loudness integrado -15.0 LUFS (objetivo −16 a −14); true peak -2.4 dBTP (≤ −1)
-- Los dos tramos marcados como intencionales son el plano muy oscuro del mueble con la llave (5.4–5.9 s) y el cartel negro "Mese 12" (9:01).
-- Revisé fotogramas clave de cada bloque, los lower thirds, las infografías, los créditos, las fuentes y el post-créditos (`work/qc/contactos.jpg`).
-- Subtítulos: 193 líneas, ninguna de más de 2 renglones. Unas pocas van a más de 21 caracteres/s porque los actores hablan rápido (y van a 1.12×).
+    -  536.90– 538.90 s (2.0 s): S6a cartel Mese 12
+    -  571.00– 576.50 s (5.5 s): S6g negro con el latido
+    -  676.00– 676.83 s (0.8 s): Q2 corte a negro
+    -  685.73– 700.03 s (14.3 s): PCb negro + créditos (texto sobre negro)
+    -  716.33– 717.57 s (1.2 s): PCb negro + créditos (texto sobre negro)
+- Loudness integrado -15.0 LUFS (objetivo −16 a −14); true peak -2.3 dBTP (≤ −1)
+- Los únicos tramos negros son los intencionales: el plano muy oscuro de la llave, las voces de la apertura, el cartel "Mese 12", el negro del latido, el corte tras la pregunta final y los créditos.
+- Revisé fotogramas de cada bloque, la huida (IMG_1320), el negro, la escena de Moro, los créditos y las fuentes (`work/qc/contactos.jpg`).
+- En la mezcla, "Fermatevi!" queda unos 9 dB por encima del latido; el latido se corta a los 3 s del negro y siguen 2,5 s de silencio total.
+- Subtítulos: 193 líneas, ninguna de más de 2 renglones.
 - `hyperframes check`: pasó, con 0 errores.
 
 ## Dudas abiertas
-- ¿Prefieren conservar algún detalle cortado por duración, por ejemplo Selye o *dignità*? Se puede: el video tiene 3 s de margen antes de los 12:00, así que habría que sacar algo equivalente en otro lado.
+- ¿Prefieren conservar algún detalle cortado por duración, por ejemplo Selye o *dignità*? Se puede: el video tiene 2 s de margen antes de los 12:00, así que habría que sacar algo equivalente en otro lado.

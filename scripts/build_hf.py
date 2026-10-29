@@ -197,12 +197,6 @@ def build_subs():
     for a, b in zip(SUBS, SUBS[1:]):
         if a["t1"] > b["t0"] - 0.04:
             a["t1"] = b["t0"] - 0.04
-    last = [x for x in SUBS if x["who"] == "M" and x["t0"] > shot("PC")["start"] - 0.1]
-    if last:
-        sfx_after = [x for x in SUBS if x["t0"] > last[0]["t0"] and x["who"] == "sfx"]
-        for x in sfx_after:
-            SUBS.remove(x)
-        last[0]["t1"] = min(TOTAL - 0.05, last[0]["t0"] + 2.2)
 
 
 def place_subs():
@@ -650,8 +644,9 @@ def infographics():
             if tt:
                 js.append(f'tl.to("#{i} .st{k}",{{backgroundColor:"rgba(215,38,61,{0.15 + 0.17 * k:.2f})",duration:0.3}},{tt:.3f});')
     t0, t1 = at_cue("IMG_1362", 137.46)
-    panel(t0 + 0.3, t1 - t0 + 0.3, '<div class="pi pnl-h">Stereotipi <em>[5]</em></div><div class="pi quote">“baby squillo”</div>'
-          '<div class="pi cap">sposta la colpa sulle ragazze</div>')
+    if t0 is not None:  # plano de "Stereotipi" (SO3), hoy fuera del corte por duración
+        panel(t0 + 0.3, t1 - t0 + 0.3, '<div class="pi pnl-h">Stereotipi <em>[5]</em></div><div class="pi quote">“baby squillo”</div>'
+              '<div class="pi cap">sposta la colpa sulle ragazze</div>')
 
 
 # ------------------------------------------------------------------ lower thirds y créditos
@@ -706,13 +701,6 @@ def credits():
         js.append(f'tl.fromTo("#{i} .cr-in",{{opacity:0,y:12}},{{opacity:1,y:0,duration:0.8,ease:"power2.out"}},{T + a + 0.1:.3f});')
         js.append(f'tl.to("#{i} .cr-in",{{opacity:0,duration:0.6}},{T + a + d - 0.7:.3f});')
     OPEN_SUBS.append(dict(t0=T + 0.3, t1=T + D - 0.3, who="sfx", label=None, look="black", text="[musica sommessa]"))
-    # escena post-créditos: humo digital lento en la luz
-    pc = shot("PC")
-    smoke = "".join(f'<i class="sm s{k}"></i>' for k in range(5))
-    i = clip("smoke", pc["start"], pc["end"] - pc["start"], smoke, 22)
-    for k in range(5):
-        js.append(f'tl.fromTo("#{i} .s{k}",{{x:{-80 + k * 40},y:{40 - k * 10},opacity:0,scale:0.8}},'
-                  f'{{x:{60 + k * 30},y:{-90 - k * 20},opacity:{0.16 + 0.03 * k:.2f},scale:1.35,duration:{pc["end"] - pc["start"]:.2f},ease:"sine.out"}},{pc["start"]:.3f});')
 
 
 CSS = r"""

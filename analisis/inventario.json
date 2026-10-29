@@ -269,6 +269,16 @@
     "audio": true,
     "color": "bt709"
   },
+  "IMG_1320.mov": {
+    "duration": 12.133333,
+    "width": 3840,
+    "height": 2160,
+    "rotation": 0,
+    "codec": "h264",
+    "fps": "30/1",
+    "audio": true,
+    "color": "bt709"
+  },
   "IMG_1339.mov": {
     "duration": 102.283333,
     "width": 3840,
