@@ -250,7 +250,8 @@ def opening():
         d = (t0 + VOX["impact"]) - t
         size = ev["size"] if seen >= 4 else 120
         font = {"ar": "NotoArabic", "hi": "NotoDeva", "zh": "NotoSC", "ja": "NotoJP"}.get(ev["lang"], "Inter")
-        style = (f"left:{ev['x'] * 100:.1f}%;top:{ev['y'] * 100:.1f}%;font-size:{size:.0f}px;font-family:'{font}'")
+        yy = 0.10 + (ev["y"] - 0.12) / 0.76 * 0.64 if seen >= 4 else ev["y"]  # deja libre la zona de subtítulos
+        style = (f"left:{ev['x'] * 100:.1f}%;top:{yy * 100:.1f}%;font-size:{size:.0f}px;font-family:'{font}'")
         i = clip("vw", t, d, f'<span class="vw-in">{E(ev["word"])}</span>', 20, style,
                  'data-layout-allow-overlap="true"')
         js.append(f'tl.fromTo("#{i} .vw-in",{{opacity:0,scale:1.35}},{{opacity:{0.95 if seen < 12 else 0.75},scale:1,duration:0.16,ease:"power4.out"}},{t:.3f});')
@@ -733,7 +734,7 @@ html,body{width:1920px;height:1080px;overflow:hidden;background:#05070a;}
 /* subtítulos */
 .sub{display:flex;align-items:flex-end;justify-content:center;}
 .sub-in{display:flex;flex-direction:column;align-items:center;gap:2px;max-width:1500px;text-align:center;}
-.sub .ln{font-weight:600;font-size:38px;line-height:1.22;letter-spacing:0.005em;color:#fff;
+.sub .ln{font-family:'Inter','NotoArabic','NotoDeva','NotoSC','NotoJP';font-weight:600;font-size:38px;line-height:1.22;letter-spacing:0.005em;color:#fff;
   -webkit-text-stroke:6px rgba(0,0,0,0.62);paint-order:stroke fill;text-shadow:0 2px 6px rgba(0,0,0,0.75);}
 .sub .who{font-weight:700;font-size:19px;letter-spacing:0.28em;margin-bottom:4px;-webkit-text-stroke:4px rgba(0,0,0,0.6);paint-order:stroke fill;}
 .sub-story{padding-bottom:20px;}
@@ -875,6 +876,14 @@ def main():
     infographics()
     place_sources()
     credits()
+    # los subtítulos de apertura y créditos también van en pantalla, sin solaparse
+    OPEN_SUBS.sort(key=lambda x: x["t0"])
+    for x, y in zip(OPEN_SUBS, OPEN_SUBS[1:]):
+        if x["t1"] > y["t0"] - 0.04:
+            x["t1"] = y["t0"] - 0.04
+    SUBS.extend(x for x in OPEN_SUBS if x["t1"] - x["t0"] > 0.2)
+    SUBS.sort(key=lambda x: x["t0"])
+    OPEN_SUBS.clear()
     place_subs()
     write_srt()
     (HF / "assets").mkdir(exist_ok=True)

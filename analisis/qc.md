@@ -5,7 +5,9 @@
 - Duración video/audio: 716.533 / 716.533 s (diferencia 0 ms)
 - Tramos negros detectados:
     -    5.40–   5.93 s (0.5 s): ⚠ NO ESPERADO
-    -    8.40–  14.17 s (5.8 s): A2/A3 apertura (voces sobre negro)
+    -    8.40–  10.47 s (2.1 s): A2/A3 apertura (voces sobre negro)
+    -   10.50–  11.87 s (1.4 s): A2/A3 apertura (voces sobre negro)
+    -   11.90–  14.17 s (2.3 s): A2/A3 apertura (voces sobre negro)
     -   14.30–  15.07 s (0.8 s): A2/A3 apertura (voces sobre negro)
     -   25.97–  26.90 s (0.9 s): A2/A3 apertura (voces sobre negro)
     -  541.70– 543.73 s (2.0 s): ⚠ NO ESPERADO
