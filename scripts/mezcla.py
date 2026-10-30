@@ -103,7 +103,7 @@ def main():
     t = SH["S6e"]["start"] + 2.0
     while t < k0 - 0.3:
         f = (t - SH["S6e"]["start"] - 2.0) / max(0.01, k0 - SH["S6e"]["start"] - 2.0)
-        place(fx, hbf if t >= f0 else hb, t, -6 + 4 * f)
+        place(fx, hbf, t, -6 + 4 * f) if t >= f0 else place(fx, hb, t, -13)  # bajo la voz de Moro hasta la fuga
         t += 60 / (95 + 30 * f)
     place(fx, load("sfx_respiro.wav"), f0, -8)
     place(fx, load("sfx_pasos.wav"), f0 + 1.2, -11)

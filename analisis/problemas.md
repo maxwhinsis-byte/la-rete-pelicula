@@ -37,6 +37,10 @@
 - **IMG_1347:** varias tomas falladas ("Che gueta", "Selye… Esto lo sacamos", "De vuelta"). Se usaron las limpias.
 - **IMG_1348:** dice "un'azione libera". Se usó IMG_1350, que dice "una decisione libera".
 - **IMG_1350** 0:47–2:11: tomas falladas y charla fuera de cuadro.
+- **IMG_1350** 0.75–0.9 s: "ya" del conteo justo antes de la frase (se oía en 6:19). El plano arranca en 1.35 s.
+- **IMG_1339** 93.9–94.8 s: "torno alla sostenuta, ok" antes de "In società diversissime". El plano arranca en 95.15 s.
+- **IMG_1239** 5.1–5.3 s y **IMG_1347** 64.7–65 s, 213–213.1 s: restos de otra toma pegados al arranque. Recortados.
+- **IMG_1347** 178.4–179.2 s: el corte automático se comía "…ed eccitazione" porque Whisper marcaba silencio donde había voz. Ahora solo corta en silencio medido.
 - **IMG_1361** 0:50–1:07 y **IMG_1362:** repeticiones ("Dignità… devo dire dignità?"). Se usó la mejor de cada frase.
 - **IMG_1363** 1ª toma: se usó la 2ª, más limpia.
 - **IMG_1230, 1269 y 1280:** buenos, pero no entraron por duración.

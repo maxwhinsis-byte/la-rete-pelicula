@@ -1,6 +1,6 @@
 # La rete — película
 
-Corto de suspenso (11:44) para la escuela: *Essere "femmine" nella prostituzione*.
+Corto de suspenso (11:49) para la escuela: *Essere "femmine" nella prostituzione*.
 Autores: Luciano Moreno, Alessandro Vanzini, Lara Sasson. Clase IVS, 2026, Scuola Italiana di Montevideo.
 
 - **Video final:** en la Release del repo (`La_rete_final.mp4`, 1080p30, H.264/AAC).

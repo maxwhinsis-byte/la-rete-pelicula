@@ -497,7 +497,7 @@ def at_cue(c, s):
 def infographics():
     # --- Il fenomeno: la red de la historia antigua
     t0, _ = at_cue("IMG_1339", 45.44)
-    _, t1 = at_cue("IMG_1339", 94.28)
+    _, t1 = at_cue("IMG_1339", 95.28)
     nodes = [("MESOPOTAMIA", "testi cuneiformi · traduzioni discusse", "[1]", 300, 150),
              ("INDIA", "Arthashastra · circa 2300 anni fa · tasse allo Stato", "[2]", 470, 330),
              ("CINA", "regole diverse secondo lo status", "[3]", 160, 470)]
@@ -510,8 +510,8 @@ def infographics():
     i = clip("pnl pnl-right pnl-map", t0, t1 - t0 + 0.5, f'<div class="pnl-in">{inner}</div>', 39)
     js.append(f'tl.fromTo("#{i} .pnl-in",{{opacity:0,x:40}},{{opacity:1,x:0,duration:0.55,ease:"power3.out"}},{t0:.3f});')
     js.append(f'tl.fromTo("#{i} .pnl-h",{{opacity:0}},{{opacity:1,duration:0.5}},{t0 + 0.3:.3f});')
-    ti, _ = at_cue("IMG_1339", 58.26)
-    tf, _ = at_cue("IMG_1339", 94.28)
+    ti, _ = at_cue("IMG_1339", 58.6)
+    tf, _ = at_cue("IMG_1339", 95.28)
     for k, tt in enumerate([t0 + 0.4, ti, tf]):
         js.append(f'tl.fromTo("#{i} .n{k}",{{opacity:0,scale:0.6}},{{opacity:1,scale:1,duration:0.5,ease:"back.out(1.6)"}},{tt:.3f});')
     js.append(f'tl.fromTo("#{i} .ln1",{{strokeDashoffset:1}},{{strokeDashoffset:0,duration:0.8}},{ti + 0.2:.3f});')
@@ -537,7 +537,7 @@ def infographics():
     i = clip("words3", t0, t1 - t0 + 0.4, '<div class="w3"><span>STRESS</span><i>·</i><span>DESIDERIO / RICOMPENSA</span><i>·</i><span>SALUTE</span></div>', 39)
     js.append(f'tl.fromTo("#{i} .w3 span, #{i} .w3 i",{{opacity:0,y:12}},{{opacity:1,y:0,duration:0.4,stagger:0.18}},{t0 + 0.2:.3f});')
     js.append(f'tl.to("#{i} .w3",{{opacity:0,duration:0.4}},{t1:.3f});')
-    t0, _ = at_cue("IMG_1347", 65.04)
+    t0, _ = at_cue("IMG_1347", 65.45)
     _, t1 = at_cue("IMG_1347", 88.9)
     panel(t0 + 0.3, t1 - t0 - 0.1,
           '<div class="pi pnl-h">Risposta rapida · secondi</div>'
@@ -564,10 +564,11 @@ def infographics():
           '<div class="pi pnl-h">Coinvolte, non “cause”</div>'
           '<div class="pi pair"><b>DOPAMINA</b><span>ricompensa · motivazione · anticipazione del piacere</span></div>'
           '<div class="pi pair"><b>OSSITOCINA</b><span>legame · fiducia</span></div>')
-    t0, t1 = at_cue("IMG_1347", 213.23)
-    i = clip("fullcard", t0 + 0.6, t1 - t0, '<div class="fc-in"><div class="fc-l">Ipotesi ≠ dimostrazione.</div><div class="fc-l">Associazione ≠ causa.</div></div>', 39)
+    t0, t1 = at_cue("IMG_1347", 213.92)
+    i = clip("fullcard", t0 + 0.6, t1 - t0 - 0.5, '<div class="fc-in"><div class="fc-l">Ipotesi ≠ dimostrazione.</div><div class="fc-l">Associazione ≠ causa.</div></div>', 39)
     js.append(f'tl.fromTo("#{i} .fc-l",{{opacity:0,y:20}},{{opacity:1,y:0,duration:0.6,stagger:0.6,ease:"power3.out"}},{t0 + 0.7:.3f});')
     js.append(f'tl.fromTo("#{i}",{{backgroundColor:"rgba(8,12,20,0)"}},{{backgroundColor:"rgba(8,12,20,0.55)",duration:0.5}},{t0 + 0.6:.3f});')
+    js.append(f'tl.to("#{i}",{{opacity:0,duration:0.3}},{t1 - 0.2:.3f});')
     t0, t1 = at_cue("IMG_1350", 5.07)
     panel(t0 + 0.3, t1 - t0 + 0.4, '<div class="pi big-t">Una reazione del corpo <u>non</u> è un consenso.</div>'
           '<div class="pi cap">Il consenso è una decisione libera.</div>')
@@ -576,7 +577,7 @@ def infographics():
           '<div class="pi pnl-h">Revisione di 19 studi <em>[11]</em></div>'
           '<div class="pi tags"><span>ansia</span><span>depressione</span><span>stress post-traumatico</span><span>dolori fisici</span><span>IST</span></div>'
           '<div class="pi note">Evidenza limitata: associazioni, non cause.</div>')
-    t0, _ = at_cue("IMG_1351", 19.14)
+    t0, _ = at_cue("IMG_1351", 19.38)
     _, t1 = at_cue("IMG_1351", 34.94)
     panel(t0 + 0.2, t1 - t0,
           '<div class="pi pnl-h">Mito e realtà <em>[12]</em></div>'
@@ -611,7 +612,7 @@ def infographics():
     js.append(f'tl.to("#{i} .pl-in",{{opacity:0,duration:0.4}},{t1 + 0.1:.3f});')
     t0, _ = at_cue("IMG_1359", 85.9)
     _, t1 = at_cue("IMG_1359", 104.82)
-    i = clip("pillars", t0 + 0.3, t1 - t0,
+    i = clip("pillars", t0 + 0.3, t1 - t0 - 0.2,
              '<div class="pl-in"><div class="pl wide"><b>RAZIONALIZZAZIONE</b><span>«Io vi proteggo» · «vi ho dato tutto»</span></div>'
              '<div class="pl wide"><b>SUPER-IO COLLETTIVO</b><span>norme · divieti · tabù — Il disagio della civiltà <em>[13] [14]</em></span></div></div>', 39)
     js.append(f'tl.fromTo("#{i} .pl",{{opacity:0,y:-20}},{{opacity:1,y:0,duration:0.5,stagger:0.25}},{t0 + 0.3:.3f});')
@@ -619,18 +620,19 @@ def infographics():
     js.append(f'tl.set("#{i} .pl:nth-child(2)",{{opacity:0}},{t0 + 0.31:.3f});')
     js.append(f'tl.fromTo("#{i} .pl:nth-child(2)",{{opacity:0,y:-20}},{{opacity:1,y:0,duration:0.5}},{tz:.3f});')
     t0, t1 = at_cue("IMG_1359", 104.82)
-    i = clip("fullcard", t0 + 0.4, t1 - t0 + 1.0,
+    i = clip("fullcard", t0 + 0.4, t1 - t0 - 0.3,
              '<div class="fc-in"><div class="fc-l small">Freud è uno strumento filosofico,</div>'
              '<div class="fc-l small">non una spiegazione biologica.</div><div class="fc-l tiny">E ha anche delle critiche.</div></div>', 39)
     js.append(f'tl.fromTo("#{i} .fc-l",{{opacity:0,y:16}},{{opacity:1,y:0,duration:0.5,stagger:0.5}},{t0 + 0.5:.3f});')
     js.append(f'tl.fromTo("#{i}",{{backgroundColor:"rgba(8,12,20,0)"}},{{backgroundColor:"rgba(8,12,20,0.5)",duration:0.5}},{t0 + 0.4:.3f});')
+    js.append(f'tl.to("#{i}",{{opacity:0,duration:0.3}},{t1 - 0.2:.3f});')
     # --- La società
     t0, t1 = at_cue("IMG_1361", 0.91)
     panel(t0 + 0.4, t1 - t0,
           '<div class="pi pnl-h">Consenso <em>[9]</em></div><div class="pi big-t">libero + informato</div>'
           '<div class="pi tags"><span>documenti tolti</span><span>isolamento</span><span>minacce</span></div>'
           '<div class="pi cap">→ non c&#39;è libertà</div><div class="pi note">Con una minorenne: nessun consenso possibile.</div>')
-    t0, t1 = at_cue("IMG_1361", 16.85)
+    t0, t1 = at_cue("IMG_1361", 18.0)
     steps = ["libertà", "scelta", "necessità economica", "sfruttamento", "violenza"]
     inner = '<div class="pi pnl-h">Una scala, non bianco o nero</div><div class="scale">' + "".join(
         f'<div class="pi st st{k}"><i>{k + 1}</i><b>{s}</b></div>' for k, s in enumerate(steps)) + \

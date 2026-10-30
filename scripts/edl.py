@@ -68,12 +68,12 @@ SHOTS: list[Shot] = [
     Shot("A1b", "IMG_1231", 0.4, 3.4, "open", "apertura"),
     Shot("A2", None, look="black", section="voci", dur=18.5),
     Shot("A3", None, look="black", section="titolo", dur=8.0),
-    Shot("A4", "IMG_1237", 11.05, 23.35, "canal", "apertura", rate=TALK,
+    Shot("A4", "IMG_1237", 11.22, 23.35, "canal", "apertura", rate=TALK,
          intro=dict(who="bianchi", at=11.05, x=0.50, y=0.30, kind="canal")),
 
     # ============ BLOCCO 1 — novità
-    Shot("B1n", "IMG_1239", 5.0, 27.95, "canal", "b1", rate=TALK, fx=["ticker:b1"]),
-    Shot("B1n2", "IMG_1239", 36.45, 41.35, "canal", "b1", rate=TALK, punch=1.08),
+    Shot("B1n", "IMG_1239", 5.6, 27.95, "canal", "b1", rate=TALK, fx=["ticker:b1"]),
+    Shot("B1n2", "IMG_1239", 37.15, 41.35, "canal", "b1", rate=TALK, punch=1.08),
     # Scena 2 — L'arrivo
     Shot("S2a", "IMG_1341", 1.0, 3.8, "s2", "s2", fx=["card:L'arrivo"]),
     Shot("S2c", "IMG_1246", 4.0, 12.2, "s2", "s2",
@@ -93,9 +93,9 @@ SHOTS: list[Shot] = [
     Shot("T1", "IMG_1272", 0.15, 12.3, "transform", "t1", fx=["transform"]),
 
     # ============ BLOCCO 1 — Il fenomeno
-    Shot("F1", "IMG_1339", 38.55, 53.65, "canal", "fen", rate=TALK, fx=["map:meso"]),
-    Shot("F2", "IMG_1339", 58.2, 68.6, "canal", "fen", rate=TALK, punch=1.08, fx=["map:india"]),
-    Shot("F3", "IMG_1339", 94.15, 100.6, "canal", "fen", rate=TALK, fx=["map:all"]),
+    Shot("F1", "IMG_1339", 38.55, 58.45, "canal", "fen", rate=TALK, fx=["map:meso"]),
+    Shot("F2", "IMG_1339", 58.45, 68.6, "canal", "fen", rate=TALK, punch=1.08, fx=["map:india"]),
+    Shot("F3", "IMG_1339", 95.15, 100.85, "canal", "fen", rate=TALK, fx=["map:all"]),
     Shot("F4", "IMG_1340", 5.45, 21.7, "canal", "fen", rate=TALK, punch=1.06, fx=["stat:onu"]),
     Shot("F5", "IMG_1340", 21.7, 40.9, "canal", "fen", rate=TALK, fx=["stat:parioli"]),
 
@@ -118,29 +118,29 @@ SHOTS: list[Shot] = [
     Shot("C0", "IMG_1347", 21.35, 26.85, "canal", "corpo", rate=TALK,
          intro=dict(who="rossi", at=21.35, x=0.25, y=0.30, kind="canal"), fx=["lt:rossi"]),
     Shot("C1", "IMG_1347", 45.2, 50.35, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:tre"]),
-    Shot("C2", "IMG_1347", 64.95, 91.7, "canal", "corpo", rate=TALK, fx=["gfx:simpatico"]),
-    Shot("C3", "IMG_1347", 92.8, 129.6, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:hpa"]),
-    Shot("C4", "IMG_1347", 129.7, 133.0, "canal", "corpo", rate=TALK),
+    Shot("C2", "IMG_1347", 65.3, 91.7, "canal", "corpo", rate=TALK, fx=["gfx:simpatico"]),
+    Shot("C3", "IMG_1347", 92.8, 129.68, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:hpa"]),
+    Shot("C4", "IMG_1347", 129.75, 133.0, "canal", "corpo", rate=TALK),
     Shot("C6", "IMG_1347", 155.25, 162.7, "canal", "corpo", rate=TALK, punch=1.07),
-    Shot("C7", "IMG_1347", 176.05, 197.65, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:dopa"]),
-    Shot("C9", "IMG_1347", 213.05, 224.5, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:causa"]),
-    Shot("C10", "IMG_1350", 0.75, 11.75, "canal", "corpo", rate=TALK, fx=["gfx:consenso"]),
-    Shot("C11", "IMG_1350", 22.0, 42.2, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:salute"]),
+    Shot("C7", "IMG_1347", 176.45, 197.98, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:dopa"]),
+    Shot("C9", "IMG_1347", 213.7, 224.5, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:causa"]),
+    Shot("C10", "IMG_1350", 1.35, 11.75, "canal", "corpo", rate=TALK, fx=["gfx:consenso"]),
+    Shot("C11", "IMG_1350", 22.22, 42.2, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:salute"]),
     Shot("C12", "IMG_1351", 3.0, 5.8, "canal", "corpo", rate=TALK),
-    Shot("C12b", "IMG_1351", 19.0, 44.3, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:miti"]),
+    Shot("C12b", "IMG_1351", 19.2, 44.3, "canal", "corpo", rate=TALK, punch=1.07, fx=["gfx:miti"]),
 
     # ============ BLOCCO 3 — novità (Bianchi sul posto, micrófono)
     Shot("B3n", "IMG_1353", 0.4, 21.5, "campo", "b3", rate=TALK,
          mic="MIC_General_Santander", mic_offset=168.82, camvol=0.12,
          fx=["ticker:b3", "lt:bianchi_campo", "gfx:frasi"]),
     # La psiche — intervista
-    Shot("P1", "IMG_1359", 17.6, 52.95, "canal", "psiche", rate=TALK,
+    Shot("P1", "IMG_1359", 17.6, 53.15, "canal", "psiche", rate=TALK,
          intro=dict(who="petrotali", at=17.6, x=0.72, y=0.27, kind="canal"),
          fx=["lt:petrotali", "gfx:esio"]),
     Shot("P2", "IMG_1359", 53.15, 71.95, "canal", "psiche", rate=TALK, punch=1.07, fx=["gfx:esio2"]),
     # 72.0-76.1: falso arranque de "il Super-Io…" fuera
-    Shot("P2b", "IMG_1359", 76.15, 81.45, "canal", "psiche", rate=TALK),
-    Shot("P3", "IMG_1359", 81.4, 88.45, "canal", "psiche", rate=TALK),
+    Shot("P2b", "IMG_1359", 76.15, 81.65, "canal", "psiche", rate=TALK),
+    Shot("P3", "IMG_1359", 82.55, 88.45, "canal", "psiche", rate=TALK),
     Shot("P4", "IMG_1359", 93.25, 110.6, "canal", "psiche", rate=TALK, punch=1.07, fx=["gfx:civilta", "gfx:freud"]),
     Shot("P7", "IMG_1359", 133.6, 136.4, "canal", "psiche", rate=TALK),
     # Scena 6 — La fuga
@@ -155,15 +155,15 @@ SHOTS: list[Shot] = [
     Shot("S6g", None, look="black", section="s6", dur=5.5, fx=["sfx:fine"]),
 
     # ============ BLOCCO 4 — novità (inviato, micrófono)
-    Shot("B4n", "IMG_1360", 0.3, 19.45, "campo", "b4", rate=TALK,
+    Shot("B4n", "IMG_1360", 0.3, 19.42, "campo", "b4", rate=TALK,
          mic="MIC_General_Santander_2", mic_offset=66.99, camvol=0.12,
          fx=["ticker:b4", "lt:inviato"]),
     # 19.45-25.65: "è uno schema…" repetido dos veces, fuera
-    Shot("B4nb", "IMG_1360", 25.65, 35.6, "campo", "b4", rate=TALK, punch=1.07,
+    Shot("B4nb", "IMG_1360", 25.52, 35.6, "campo", "b4", rate=TALK, punch=1.07,
          mic="MIC_General_Santander_2", mic_offset=66.99, camvol=0.12),
     # La società
-    Shot("SO1", "IMG_1361", 0.75, 16.95, "canal", "soc", rate=TALK, fx=["gfx:consenso2"]),
-    Shot("SO2", "IMG_1361", 16.85, 46.2, "canal", "soc", rate=TALK, punch=1.07, fx=["gfx:scala"]),
+    Shot("SO1", "IMG_1361", 0.75, 17.05, "canal", "soc", rate=TALK, fx=["gfx:consenso2"]),
+    Shot("SO2", "IMG_1361", 17.85, 46.2, "canal", "soc", rate=TALK, punch=1.07, fx=["gfx:scala"]),
 
     # ============ LA DOMANDA FINALE
     Shot("Q1", "IMG_1363", 61.5, 89.2, "canal", "finale", fx=["finale"]),
@@ -188,11 +188,11 @@ CUES: list[Cue] = [
     Cue("IMG_1237", 14.6, 20.6, "B", "Una segnalazione anonima parla di una rete che potrebbe trattenere donne straniere in questa città."),
     Cue("IMG_1237", 20.6, 23.2, "B", "Vi diciamo cosa sappiamo e cosa ancora no."),
     # Blocco 1 novità
-    Cue("IMG_1239", 5.2, 8.6, "B", "Le prime informazioni. La segnalazione è arrivata ieri sera."),
+    Cue("IMG_1239", 5.84, 8.6, "B", "Le prime informazioni. La segnalazione è arrivata ieri sera."),
     Cue("IMG_1239", 8.8, 16.6, "B", "Una vicina dichiara alla nostra inviata di aver visto, da un anno, due giovani donne straniere entrare in un appartamento e non uscire mai da sole."),
     Cue("IMG_1239", 16.9, 20.0, "B", "Le autorità non hanno ancora confermato nulla."),
     Cue("IMG_1239", 20.05, 27.9, "B", "Abbiamo però ottenuto una ricostruzione, basata su testimonianze e documenti, di ciò che sarebbe successo il giorno in cui le donne sono arrivate."),
-    Cue("IMG_1239", 36.6, 41.3, "B", "Le chiameremo Dana ed Eva: nomi inventati per proteggere la loro identità."),
+    Cue("IMG_1239", 37.42, 41.3, "B", "Le chiameremo Dana ed Eva: nomi inventati per proteggere la loro identità."),
     # Scena 2
     Cue("IMG_1341", 0.3, 4.5, "sfx", "[vento, uccelli lontani]"),
     Cue("IMG_1246", 0.6, 4.0, "sfx", "[la porta si apre]"),
@@ -215,10 +215,10 @@ CUES: list[Cue] = [
     Cue("IMG_1339", 38.7, 45.3, "B", "Non è un tema solo di oggi: se ne trovano tracce da più di quattromila anni, e non solo in Occidente."),
     Cue("IMG_1339", 45.44, 53.6, "B", "In Mesopotamia i testi cuneiformi usano parole tradotte \"prostituta\", ma gli studiosi discutono quanto la traduzione sia corretta."),
     Cue("IMG_1339", 53.76, 58.24, "B", "Anche la \"prostituzione sacra\" nei templi è messa in dubbio."),
-    Cue("IMG_1339", 58.26, 68.54, "B", "In India, l'Arthashastra, un trattato di governo di circa 2300 anni fa, parla di donne che esercitavano e pagavano tasse allo Stato."),
+    Cue("IMG_1339", 58.6, 68.54, "B", "In India, l'Arthashastra, un trattato di governo di circa 2300 anni fa, parla di donne che esercitavano e pagavano tasse allo Stato."),
     Cue("IMG_1339", 68.72, 77.5, "B", "In Cina una tradizione attribuisce al ministro Guan Zhong, sette secoli prima di Cristo, un sistema al servizio dello Stato."),
     Cue("IMG_1339", 77.74, 83.76, "B", "Per l'epoca imperiale, la ricerca osserva che le regole cambiavano secondo lo status delle persone."),
-    Cue("IMG_1339", 94.28, 100.48, "B", "In società diversissime torna lo stesso schema: soldi, controllo e differenze di status."),
+    Cue("IMG_1339", 95.28, 100.48, "B", "In società diversissime torna lo stesso schema: soldi, controllo e differenze di status."),
     Cue("IMG_1340", 5.5, 21.64, "B", "Oggi, secondo l'ONU, nel 2022 donne e ragazze erano il 61% delle vittime di tratta individuate; il 60% delle ragazze vittime era trafficato a fini di sfruttamento sessuale. Sono casi individuati: molto resta sommerso."),
     Cue("IMG_1340", 21.64, 40.64, "B", "E non è un problema lontano: nel 2013, a Roma, nel quartiere Parioli, due ragazze di 14 e 15 anni furono sfruttate da adulti, e furono condannati i responsabili, tra cui la madre di una delle due. Quel caso fu chiamato \"baby squillo\", un nome che sposta la colpa sulle ragazze."),
     # Blocco 2 novità
@@ -244,7 +244,7 @@ CUES: list[Cue] = [
     Cue("IMG_1347", 21.51, 26.73, "B", "Dottor Rossi, ci siamo fermati su quel battito che sale. Lo spieghiamo con la scienza."),
     Cue("IMG_1347", 45.34, 50.14, "R", "Partiamo da una premessa: la biologia descrive meccanismi, non spiega le persone."),
     Cue("IMG_1347", 51.06, 55.4, "R", "Distingueremo sempre ciò che la ricerca dimostra da ciò che è solo un'ipotesi."),
-    Cue("IMG_1347", 65.04, 70.84, "R", "Primo: la risposta rapida. Davanti a una minaccia il cervello attiva il sistema nervoso simpatico,"),
+    Cue("IMG_1347", 65.45, 70.84, "R", "Primo: la risposta rapida. Davanti a una minaccia il cervello attiva il sistema nervoso simpatico,"),
     Cue("IMG_1347", 70.94, 76.18, "R", "la parte del sistema nervoso autonomo che prepara alla \"lotta o fuga\"."),
     Cue("IMG_1347", 77.56, 87.22, "R", "La midollare del surrene libera adrenalina e noradrenalina. Il cuore accelera, la pressione sale, i muscoli ricevono più sangue."),
     Cue("IMG_1347", 88.9, 91.58, "R", "Succede in secondi. È il battito che sentite."),
@@ -252,23 +252,23 @@ CUES: list[Cue] = [
     Cue("IMG_1347", 98.06, 112.04, "R", "L'ipotalamo libera CRH; il CRH stimola l'ipofisi a liberare ACTH; l'ACTH stimola la corticale del surrene a produrre cortisolo."),
     Cue("IMG_1347", 112.28, 123.5, "R", "È una catena di messaggeri chimici che agisce in minuti. Poi il cortisolo stesso frena la catena: questo è il feedback negativo. Il corpo torna all'equilibrio."),
     Cue("IMG_1347", 123.52, 129.48, "R", "Quindi il sistema nervoso e il sistema endocrino lavorano insieme: uno veloce, l'altro più lento."),
-    Cue("IMG_1347", 129.8, 132.82, "B", "E se la pressione dura mesi, come nel caso che stiamo seguendo?"),
+    Cue("IMG_1347", 130.05, 132.82, "B", "E se la pressione dura mesi, come nel caso che stiamo seguendo?"),
     Cue("IMG_1347", 144.72, 153.88, "R", "Beh, lo stress cronico è un'altra storia. Si possono descrivere tre fasi: allarme, resistenza ed esaurimento."),
     Cue("IMG_1347", 155.38, 162.52, "R", "Nello stress prolungato l'asse può restare attivo, e il feedback può funzionare meno bene."),
     Cue("IMG_1347", 167.58, 175.88, "R", "Non possiamo dire che cosa accada nel corpo di una persona reale, e il cortisolo da solo non causa una condizione."),
-    Cue("IMG_1347", 176.16, 182.14, "B", "Una domanda su desiderio. Alcuni dicono che è tutto chimica."),
+    Cue("IMG_1347", 176.72, 182.14, "B", "Una domanda su desiderio ed eccitazione. Alcuni dicono che è tutto chimica."),
     Cue("IMG_1347", 182.42, 186.8, "R", "È proprio l'errore da evitare. Alcune sostanze sono coinvolte:"),
-    Cue("IMG_1347", 186.84, 197.5, "R", "la dopamina, neurotrasmettitore del circuito della ricompensa, è associata a motivazione e anticipazione del piacere; l'ossitocina, a legame e fiducia."),
+    Cue("IMG_1347", 186.84, 197.9, "R", "la dopamina, neurotrasmettitore del circuito della ricompensa, è associata a motivazione e anticipazione del piacere; l'ossitocina, a legame e fiducia."),
     Cue("IMG_1347", 205.23, 208.5, "R", "Gli ormoni sessuali, come estrogeni e testosterone,"),
     Cue("IMG_1347", 210.29, 212.99, "R", "regolano pubertà e funzioni riproduttive."),
-    Cue("IMG_1347", 213.23, 224.39, "R", "Ma \"coinvolto\" non vuol dire \"causa\". Un ormone non equivale a un comportamento, e i risultati cambiano molto da persona a persona e con il contesto."),
-    Cue("IMG_1350", 0.9, 4.59, "B", "E quindi una reazione del corpo non dimostra un consenso."),
+    Cue("IMG_1347", 213.92, 224.39, "R", "Ma \"coinvolto\" non vuol dire \"causa\". Un ormone non equivale a un comportamento, e i risultati cambiano molto da persona a persona e con il contesto."),
+    Cue("IMG_1350", 1.45, 4.59, "B", "E quindi una reazione del corpo non dimostra un consenso."),
     Cue("IMG_1350", 5.07, 11.61, "R", "Esatto. Una reazione del corpo non è un consenso. Il consenso è una decisione libera, e non si legge in un ormone."),
-    Cue("IMG_1350", 22.13, 25.39, "B", "Invece, cosa sappiamo della salute di chi è vittima di tratta?"),
+    Cue("IMG_1350", 22.46, 25.39, "B", "Invece, cosa sappiamo della salute di chi è vittima di tratta?"),
     Cue("IMG_1350", 25.39, 42.07, "R", "Una revisione di 19 studi ha trovato molta violenza e sofferenza psicologica: ansia, depressione, stress post-traumatico, dolori fisici e infezioni sessualmente trasmesse. Ma l'evidenza è limitata, e mostra associazioni, non cause."),
     Cue("IMG_1351", 3.1, 5.72, "B", "E la salute sessuale? Si sentono tanti miti."),
     Cue("IMG_1351", 5.74, 18.96, "R", "Sì, è vero, esistono tanti miti. Che il preservativo protegge da tutte le malattie, o al contrario che non serve a nulla, o che chi lavora in questo ambito sceglie come proteggersi. Tutti questi sono miti."),
-    Cue("IMG_1351", 19.14, 34.74, "R", "Il preservativo usato correttamente riduce molto il rischio di HIV e di molte altre IST, ma contro quelle trasmesse per contatto di pelle o mucose, come herpes, sifilide e HPV,"),
+    Cue("IMG_1351", 19.38, 34.74, "R", "Infatti il preservativo usato correttamente riduce molto il rischio di HIV e di molte altre IST, ma contro quelle trasmesse per contatto di pelle o mucose, come herpes, sifilide e HPV,"),
     Cue("IMG_1351", 34.94, 44.12, "R", "protegge solo in parte. E poi, chi vive isolata e controllata ha poco potere di negoziare la propria protezione."),
     # Blocco 3 novità
     Cue("IMG_1353", 0.0, 6.54, "B", "Altra novità. Gli investigatori hanno ricevuto un testo scritto a mano, che sarebbe di una delle due donne."),
@@ -283,7 +283,7 @@ CUES: list[Cue] = [
     Cue("IMG_1359", 53.24, 61.66, "B", "Se pensiamo alla donna che ha scritto questa lettera: vuole scappare, ma resta. Cosa può accadere nella sua mente?"),
     Cue("IMG_1359", 62.52, 71.9, "P", "Quello che accade è un conflitto psichico. L'impulso è fuggire, ma l'Io valuta la realtà: il debito, il passaporto trattenuto, la paura della polizia."),
     Cue("IMG_1359", 76.2, 81.36, "P", "Il Super-Io si trasforma in vergogna e colpa: \"Se sei qui, è colpa tua\"."),
-    Cue("IMG_1359", 81.39, 85.07, "B", "E sull'uomo che scrive \"Io vi proteggo\"?"),
+    Cue("IMG_1359", 82.78, 85.07, "B", "E sull'uomo che scrive \"Io vi proteggo\"?"),
     Cue("IMG_1359", 85.9, 88.4, "P", "Una possibile lettura: la razionalizzazione."),
     Cue("IMG_1359", 93.34, 98.25, "P", "Giustificazioni che permettono di ottenere ciò che si vuole senza sentire la colpa."),
     Cue("IMG_1359", 98.52, 104.72, "P", "Poi, \"Il disagio della civiltà\": la civiltà come Super-Io collettivo. Norme, divieti, tabù."),
@@ -314,7 +314,7 @@ CUES: list[Cue] = [
     Cue("IMG_1360", 27.92, 35.46, "I", "Dati precisi sugli omicidi di vittime di tratta sono difficili da avere, perché molti casi restano sommersi."),
     # La società
     Cue("IMG_1361", 0.91, 16.85, "B", "Parliamo di consenso: è valido solo se libero e informato. Se qualcuno ti toglie i documenti, ti isola e ti minaccia, non c'è libertà. Con una minorenne non c'è consenso possibile: la legge italiana punisce la prostituzione minorile e il suo sfruttamento."),
-    Cue("IMG_1361", 16.85, 46.05, "B", "Ma non tutto è bianco o nero. Pensiamola come una scala: libertà, scelta, necessità economica, sfruttamento e violenza. Nel caso Parioli, la stampa riporta che le ragazze cercavano denaro per consumi di lusso, e non vivevano in condizioni di povertà estrema. Il condizionamento non è sempre economico, e c'è chi si prostituisce senza essere vittima di tratta. Ecco perché distinguere è importante."),
+    Cue("IMG_1361", 18.0, 46.05, "B", "Ma non tutto è bianco o nero. Pensiamola come una scala: libertà, scelta, necessità economica, sfruttamento e violenza. Nel caso Parioli, la stampa riporta che le ragazze cercavano denaro per consumi di lusso, e non vivevano in condizioni di povertà estrema. Il condizionamento non è sempre economico, e c'è chi si prostituisce senza essere vittima di tratta. Ecco perché distinguere è importante."),
     Cue("IMG_1362", 126.0, 136.72, "B", "Dignità: nel caso Parioli, una giudice dispose che un cliente risarcisse le ragazze anche comprando libri sul pensiero femminile, per restituire loro la dignità lesa."),
     Cue("IMG_1362", 137.46, 143.14, "B", "Stereotipi: l'etichetta \"baby squillo\" sposta la colpa sulle ragazze, come osserva l'avvocata Manente."),
     # La domanda finale
@@ -331,6 +331,8 @@ CUES: list[Cue] = [
 ]
 
 
+# líneas grabadas bajas respecto del resto del diálogo: ganancia antes de la cadena de voz (dB)
+VOZ_DB = {"S2e": 20, "S4b": 21, "S6b": 7, "S6d": 8, "PC": 13}
 GAP_MAX = 0.75   # silencios más largos que esto dentro de un plano hablado se acortan...
 GAP_KEEP = 0.32  # ...a esta duración (corte oculto con reencuadre alternado)
 
@@ -346,6 +348,74 @@ def _words(clip, mic=None, mic_offset=0.0):
     return sorted(ws)
 
 
+_ENV = {}
+
+
+def _env(src):
+    """Envolvente de la toma (cuadros de 20 ms, dB) y umbral de voz."""
+    if src not in _ENV:
+        from pathlib import Path
+        import numpy as np
+        import soundfile as sf
+        x, sr = sf.read(Path(__file__).resolve().parent.parent / "work" / "wav" / f"{src}.wav",
+                        dtype="float32", always_2d=True)
+        x = x.mean(1)
+        h = int(0.02 * sr)
+        n = len(x) // h
+        e = 20 * np.log10(np.sqrt((x[:n * h].reshape(n, h) ** 2).mean(1)) + 1e-9)
+        _ENV[src] = (e, max(float(np.percentile(e, 95)) - 26, float(np.percentile(e, 15)) + 9))
+    return _ENV[src]
+
+
+def _hueco(s, a, b):
+    """Whisper a veces marca un silencio donde hay voz: el corte se hace en el silencio real más largo
+    entre a y b (segundos de clip), o no se hace si no hay ninguno."""
+    e, th = _env(s.mic or s.clip)
+    o = s.mic_offset or 0.0
+    i0, i1 = int((a + o) / 0.02), int((b + o) / 0.02)
+    best, st = (0, 0), None
+    for i in range(i0, i1 + 1):
+        quiet = i < i1 and i < len(e) and e[i] < th - 6
+        if quiet and st is None:
+            st = i
+        elif not quiet and st is not None:
+            if i - st > best[1] - best[0]:
+                best = (st, i)
+            st = None
+    c0, c1 = best[0] * 0.02 - o + GAP_KEEP / 2, best[1] * 0.02 - o - GAP_KEEP / 2
+    return (c0, c1) if c1 - c0 > 0.05 else None
+
+
+NO_RESPIRA = {"B4n", "S6d", "S6f", "A1", "A1b", "PC"}  # cortes puestos a mano
+HABLA = {"canal", "campo", "s2", "s4", "s6", "transform"}
+
+
+def _respira(shots):
+    """Ningún plano termina sobre la última sílaba: la cola sigue hasta que la voz cae, más 0,12 s de aire,
+    sin llegar a lo que venga después en la toma."""
+    from dataclasses import replace
+    out = []
+    for i, s in enumerate(shots):
+        nx = shots[i + 1] if i + 1 < len(shots) else None
+        junto = nx is not None and nx.clip == s.clip and abs(nx.tin - s.tout) < 0.3
+        if s.id in NO_RESPIRA or not s.clip or ":" in s.clip or s.look not in HABLA or junto:
+            out.append(s)
+            continue
+        e, th = _env(s.mic or s.clip)
+        o = s.mic_offset or 0.0
+        i0 = min(int((s.tout + o) / 0.02), len(e) - 1)
+        j = i0
+        while j < min(i0 + 20, len(e)) and e[j] > th - 2:
+            j += 1
+        k = j
+        while k < min(i0 + 40, len(e)) and e[k] <= th:
+            k += 1
+        cerca = j > i0 or (e[max(0, i0 - 5):i0] > th).any()
+        fin = min(j * 0.02 + 0.12, k * 0.02 - 0.06) - o
+        out.append(replace(s, tout=round(fin, 2)) if cerca and fin > s.tout + 0.02 else s)
+    return out
+
+
 def expand(shots=None):
     """Divide los planos hablados del canal en tramos sin silencios largos."""
     shots = shots or SHOTS
@@ -358,7 +428,9 @@ def expand(shots=None):
         cuts = []
         for (a0, a1), (b0, b1) in zip(ws, ws[1:]):
             if b0 - a1 > GAP_MAX:
-                cuts.append((a1 + GAP_KEEP / 2, b0 - GAP_KEEP / 2))
+                h = _hueco(s, a1, b0)
+                if h:
+                    cuts.append(h)
         if not cuts:
             out.append(s)
             continue
@@ -376,7 +448,7 @@ def expand(shots=None):
                                intro=s.intro if i == 0 else None,
                                fx=s.fx if i == 0 else [f for f in s.fx if f.startswith(("gfx", "map", "stat", "lt", "ticker"))],
                                ))
-    return out
+    return _respira(out)
 
 
 FPS = 30

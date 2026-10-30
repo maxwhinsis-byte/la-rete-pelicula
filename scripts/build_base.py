@@ -176,6 +176,9 @@ def render_audio(s, n, path):
     else:
         voice = VOICE if s.look in ("canal", "campo", "transform") or s.section in ("finale",) else \
             "highpass=f=70,afftdn=nr=8:nf=-45,acompressor=threshold=-24dB:ratio=2.2:makeup=1.5"
+        g = edl.VOZ_DB.get(s.id)
+        if g:
+            voice = f"volume={g}dB,{voice}"
         run(["ffmpeg", "-y", "-ss", f"{s.tin:.3f}", "-t", f"{s.tout - s.tin:.3f}", "-i", str(src),
              "-af", f"{af}aresample={SR},{voice}", "-ac", "2", "-ar", str(SR), str(tmp)])
     x, _ = sf.read(tmp, dtype="float32", always_2d=True)
