@@ -83,7 +83,7 @@
 - Loudness integrado -15.0 LUFS (objetivo −16 a −14); true peak -2.3 dBTP (≤ −1)
 - Los únicos tramos negros son los intencionales: el plano muy oscuro de la llave, las voces de la apertura, el cartel "Mese 12", el negro del latido, el corte tras la pregunta final y los créditos.
 - Revisé fotogramas de cada bloque, la huida (IMG_1320), el negro, la escena de Moro, los créditos y las fuentes (`work/qc/contactos.jpg`).
-- En la mezcla, "Fermatevi!" queda por encima del latido. En el negro cada latido llega al nivel máximo de la mezcla con silencio entre golpe y golpe; el último termina a los 3,0 s y siguen 2,5 s de silencio total.
+- En la mezcla, "Fermatevi!" queda por encima del latido. En el negro cada latido queda en primer plano, con una pausa entre golpe y golpe; el último se apaga cerca de los 3 s y siguen 2,5 s de silencio total.
 - Subtítulos: 194 líneas, ninguna de más de 2 renglones. Comparé cada una con el audio del video final.
 - Cortes: los 7 tramos que el corte automático saca dentro de un plano tienen 0 % de voz, sin clics en ningún corte.
 - `hyperframes check`: pasó, con 0 errores.
